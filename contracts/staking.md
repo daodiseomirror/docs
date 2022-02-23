@@ -13,7 +13,7 @@ pub struct InitMsg {
     pub mirror_token: HumanAddr,
     pub mint_contract: HumanAddr,
     pub oracle_contract: HumanAddr,
-    pub terraswap_factory: HumanAddr,
+    pub daodiseoswap_factory: HumanAddr,
     pub base_denom: String,
     pub premium_min_update_interval: u64,
 }
@@ -23,11 +23,11 @@ pub struct InitMsg {
 {% tab title="JSON" %}
 ```javascript
 {
-    "owner": "terra1...",
-    "mirror_token": "terra1...",
-    "mint_contract": "terra1...",
-    "oracle_contract": "terra1...",
-    "terraswap_factory": "terra1...",
+    "owner": "daodiseo1...",
+    "mirror_token": "daodiseo1...",
+    "mint_contract": "daodiseo1...",
+    "oracle_contract": "daodiseo1...",
+    "daodiseoswap_factory": "daodiseo1...",
     "base_denom": "uusd",
     "premium_min_update_interval": 8
 }
@@ -41,8 +41,8 @@ pub struct InitMsg {
 | `mirror_token`                | HumanAddr | Contract address of the Mirror Token (MIR)                                                           |
 | `mint_contract`               | HumanAddr | Contract address of Mirror Mint                                                                      |
 | `oracle_contract`             | HumanAddr | Contract address of Mirror Oracle                                                                    |
-| `terraswap_factory`           | HumanAddr | Contract address of Terraswap Factory                                                                |
-| `base_denom`                  | String    | Native token denom for Terraswap pairs (TerraUSD)                                                    |
+| `daodiseoswap_factory`           | HumanAddr | Contract address of Daodiseoswap Factory                                                                |
+| `base_denom`                  | String    | Native token denom for Daodiseoswap pairs (DaodiseoUSD)                                                    |
 | `premium_min_update_interval` | u64       | Interval of time denominated in number of blocks which the collateral premium information is updated |
 
 ## HandleMsg
@@ -71,7 +71,7 @@ pub enum HandleMsg {
 {
   "receive": {
     "amount": "10000000",
-    "sender": "terra1...",
+    "sender": "daodiseo1...",
     "msg": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
   }
 }
@@ -109,7 +109,7 @@ pub enum HandleMsg {
 ```javascript
 {
     "update_config": {
-        "owner": "terra1...",
+        "owner": "daodiseo1...",
         "premium_min_update_interval": 8
     }
 }
@@ -146,8 +146,8 @@ pub enum HandleMsg {
 ```javascript
 {
   "register_asset": {
-    "asset_token": "terra1...",
-    "staking_token": "terra1..."
+    "asset_token": "daodiseo1...",
+    "staking_token": "daodiseo1..."
   }
 }
 ```
@@ -182,7 +182,7 @@ pub enum HandleMsg {
 {
   "unbond": {
     "amount": "10000000",
-    "asset_token": "terra1..."
+    "asset_token": "daodiseo1..."
   }
 }
 ```
@@ -215,7 +215,7 @@ pub enum HandleMsg {
 ```javascript
 {
   "withdraw": {
-    "asset_token": "terra1..."
+    "asset_token": "daodiseo1..."
   }
 }
 ```
@@ -263,7 +263,7 @@ pub enum HandleMsg {
     "amount": "1000000",
     "info": {
       "token": {
-        "contract_address": "terra1..."
+        "contract_address": "daodiseo1..."
       }
     },
     "amount": "1000000",
@@ -308,9 +308,9 @@ pub enum HandleMsg {
 ```javascript
 {
     "auto_stake_hook": {
-        "asset_token": "terra1...",
-        "staking_token": "terra1...",
-        "staker_addr": "terra1...",
+        "asset_token": "daodiseo1...",
+        "staking_token": "daodiseo1...",
+        "staker_addr": "daodiseo1...",
         "prev_staking_token_amount: "1000000"
     },
 }
@@ -347,7 +347,7 @@ pub enum HandleMsg {
 {
     "adjust_premium": {
         "asset_tokens": [
-            "terra1...", "terra1..."
+            "daodiseo1...", "daodiseo1..."
         ]
     }
 }
@@ -383,8 +383,8 @@ pub enum HandleMsg {
 ```javascript
 {
     "increase_short_token": {
-        "asset_token": "terra1...",
-        "staker_addr": "terra1...",
+        "asset_token": "daodiseo1...",
+        "staker_addr": "daodiseo1...",
         "amount": "1000000"
     }
 }
@@ -421,8 +421,8 @@ pub enum HandleMsg {
 ```javascript
 {
     "decrease_short_token": {
-        "asset_token": "terra1...",
-        "staker_addr": "terra1...", 
+        "asset_token": "daodiseo1...",
+        "staker_addr": "daodiseo1...", 
         "amount": "1000000"
     }
 }
@@ -465,7 +465,7 @@ pub enum Cw20HookMsg {
 ```javascript
 {
   "bond": {
-    "asset_token": "terra1..."
+    "asset_token": "daodiseo1..."
   }
 }
 ```
@@ -499,7 +499,7 @@ pub enum Cw20HookMsg {
 ```javascript
 {
   "deposit_reward": {
-    "asset_token": "terra1..."
+    "asset_token": "daodiseo1..."
   }
 }
 ```
@@ -533,7 +533,7 @@ pub struct ConfigResponse {
     pub mirror_token: HumanAddr,
     pub mint_contract: HumanAddr,
     pub oracle_contract: HumanAddr,
-    pub terraswap_factory: HumanAddr,
+    pub daodiseoswap_factory: HumanAddr,
     pub base_denom: String,
     pub premium_min_update_interval: u64,
 }
@@ -545,8 +545,8 @@ pub struct ConfigResponse {
 | `mirror_token`                | HumanAddr | Contract address of the Mirror Token (MIR)                                                           |
 | `mint_contract`               | HumanAddr | Contract address of Mirror Mint                                                                      |
 | `oracle_contract`             | HumanAddr | Contract address of Mirror Oracle                                                                    |
-| `terraswap_factory`           | HumanAddr | Contract address of Terraswap Factory                                                                |
-| `base_denom`                  | String    | Native token denom for Terraswap pairs (TerraUSD)                                                    |
+| `daodiseoswap_factory`           | HumanAddr | Contract address of Daodiseoswap Factory                                                                |
+| `base_denom`                  | String    | Native token denom for Daodiseoswap pairs (DaodiseoUSD)                                                    |
 | `premium_min_update_interval` | u64       | Interval of time denominated in number of blocks which the collateral premium information is updated |
 {% endtab %}
 
@@ -562,11 +562,11 @@ pub struct ConfigResponse {
 ```javascript
 {
     "config_response": {
-        "owner": "terra1...",
-        "mirror_token": "terra1...",
-        "mint_contract": "terra1...",
-        "oracle_contract": "terra1...",
-        "terraswap_factory": "terra1...",
+        "owner": "daodiseo1...",
+        "mirror_token": "daodiseo1...",
+        "mint_contract": "daodiseo1...",
+        "oracle_contract": "daodiseo1...",
+        "daodiseoswap_factory": "daodiseo1...",
         "base_denom": "uusd",
         "premium_min_update_interval": 8
     }
@@ -579,8 +579,8 @@ pub struct ConfigResponse {
 | `mirror_token`                | HumanAddr | Contract address of the Mirror Token (MIR)                                                           |
 | `mint_contract`               | HumanAddr | Contract address of Mirror Mint                                                                      |
 | `oracle_contract`             | HumanAddr | Contract address of Mirror Oracle                                                                    |
-| `terraswap_factory`           | HumanAddr | Contract address of Terraswap Factory                                                                |
-| `base_denom`                  | String    | Native token denom for Terraswap pairs (TerraUSD)                                                    |
+| `daodiseoswap_factory`           | HumanAddr | Contract address of Daodiseoswap Factory                                                                |
+| `base_denom`                  | String    | Native token denom for Daodiseoswap pairs (DaodiseoUSD)                                                    |
 | `premium_min_update_interval` | u64       | Interval of time denominated in number of blocks which the collateral premium information is updated |
 {% endtab %}
 {% endtabs %}
@@ -641,7 +641,7 @@ pub struct PoolInfoResponse {
 ```javascript
 {
   "pool_info": {
-    "asset_token": "terra1..."
+    "asset_token": "daodiseo1..."
 Key
 ```
 
@@ -654,8 +654,8 @@ Key
 ```javascript
 {
     "pool_info_response": {
-        "asset_token": "terra1...",
-        "staking_token": "terra1...",
+        "asset_token": "daodiseo1...",
+        "staking_token": "daodiseo1...",
         "total_bond_amount": "1000000",
         "total_short_amount": "1000000",
         "reward_index": "123.456789",
@@ -731,8 +731,8 @@ pub struct RewardInfoResponseItem {
 ```javascript
 {
   "reward_info": {
-    "asset_token": "terra1...",
-    "staker": "terra1..."
+    "asset_token": "daodiseo1...",
+    "staker": "daodiseo1..."
   }
 }
 ```
@@ -749,7 +749,7 @@ pub struct RewardInfoResponseItem {
 ```javascript
 {
     "reward_info_response_item": {
-        "asset_token": "terra1...",
+        "asset_token": "daodiseo1...",
         "bond_amount": "1000000",
         "pending_reward": "1000000",
         "is_short": true

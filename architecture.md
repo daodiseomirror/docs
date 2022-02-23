@@ -8,7 +8,7 @@ Even with a thorough understanding of Mirror Protocol, it is highly recommended 
 
 ## Smart Contracts
 
-The source code for Mirror smart contracts can be found on [GitHub](https://github.com/Mirror-Protocol/mirror-contracts). Mirror Protocol is deployed with one of each of the following contracts, organized through the Factory.
+The source code for Mirror smart contracts can be found on [GitHub](https://github.com/daodiseomirror/mirror-contracts). Mirror Protocol is deployed with one of each of the following contracts, organized through the Factory.
 
 <table>
   <thead>
@@ -60,11 +60,11 @@ The source code for Mirror smart contracts can be found on [GitHub](https://gith
   </tbody>
 </table>
 
-The Mirror Token \(MIR\) is a Terraswap CW20 Token instance that is created during the initial bootstrapping of the protocol and is registered with the Mirror Protocol core contracts.
+The Mirror Token \(MIR\) is a Daodiseoswap CW20 Token instance that is created during the initial bootstrapping of the protocol and is registered with the Mirror Protocol core contracts.
 
 When new mAssets are whitelisted, Mirror Protocol will create the following contract instances:
 
-* Terraswap CW20 Token for the new mAsset
-* Terraswap Pair for the new mAsset against UST
-* Terraswap CW20 Token for the new mAsset's LP Token
+* Daodiseoswap CW20 Token for the new mAsset
+* Daodiseoswap Pair for the new mAsset against UST
+* Daodiseoswap CW20 Token for the new mAsset's LP Token
 

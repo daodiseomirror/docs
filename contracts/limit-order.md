@@ -2,7 +2,7 @@
 
 Limit Order allows submission, updates, and execution of buy and sell orders at a limit price specified by the users. Once the limit order is submitted and the limit price is reached, market-making agents can read the orders from the Limit Order contract and execute them when it provides an arbitrage opportunity.\
 \
-To create a market-making bot for arbitrage opportunity, refer to this [Github link](https://github.com/Mirror-Protocol/mirror-contracts/tree/master/contracts/mirror\_limit\_order).
+To create a market-making bot for arbitrage opportunity, refer to this [Github link](https://github.com/daodiseomirror/mirror-contracts/tree/master/contracts/mirror\_limit\_order).
 
 ## InitMsg
 
@@ -41,7 +41,7 @@ pub enum HandleMsg {
 {
   "receive": {
     "amount": "10000000",
-    "sender": "terra1...",
+    "sender": "daodiseo1...",
     "msg": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
   }
 }
@@ -83,7 +83,7 @@ pub enum HandleMsg {
     "offer_asset": {
         "info": {
             "token": {
-                "contract_address": "terra1..."
+                "contract_address": "daodiseo1..."
             }
         },
         "amount": "1000000"
@@ -163,7 +163,7 @@ pub enum HandleMsg {
     "execute_asset": {
         "info": {
             "token": {
-                "contract_address": "terra1..."
+                "contract_address": "daodiseo1..."
             }
         },
         "amount": "1000000"
@@ -211,7 +211,7 @@ pub enum Cw20HookMsg {
     "ask_asset": {
         "info": {
             "token": {
-                "contract_addr": "terra1..."
+                "contract_addr": "daodiseo1..."
             }
           }
         },
@@ -324,11 +324,11 @@ pub struct OrderResponse {
 {
     "OrderResponse": {
         "order_id": 10,
-        "bidder_addr": "terra1...",
+        "bidder_addr": "daodiseo1...",
         "offer_asset": {
             "info": {
                 "token": {
-                    "contract_address": "terra1..."
+                    "contract_address": "daodiseo1..."
                 }
             },
             "amount": "10000000"
@@ -410,7 +410,7 @@ pub struct OrdersResponse {
 ```javascript
 {
   "orders": {
-    "bidder_addr": "terra1...",
+    "bidder_addr": "daodiseo1...",
     "limit": 8,
     "order_by": "asc"
     "start_after": 8
@@ -432,11 +432,11 @@ pub struct OrdersResponse {
   "OrdersResponse": [
         {
         "order_id": 10
-        "bidder_addr": "terra1...",
+        "bidder_addr": "daodiseo1...",
         "offer_asset": {
             "info": {
                 "token": {
-                    "contract_address": "terra1..."
+                    "contract_address": "daodiseo1..."
                 }
             },
             "amount": "10000000"
@@ -455,11 +455,11 @@ pub struct OrdersResponse {
         },
         {
         "order_id": 10
-        "bidder_addr": "terra1...",
+        "bidder_addr": "daodiseo1...",
         "offer_asset": {
             "info": {
                 "token": {
-                    "contract_address": "terra1..."
+                    "contract_address": "daodiseo1..."
                 }
             },
             "amount": "10000000"

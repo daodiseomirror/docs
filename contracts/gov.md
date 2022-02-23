@@ -41,7 +41,7 @@ pub struct InitMsg {
 {% tab title="JSON" %}
 ```javascript
 {
-    "mirror_token": "terra1...",
+    "mirror_token": "daodiseo1...",
     "quorum": "0.1",
     "threshold": "0.5",
     "voting_period": 8,
@@ -91,7 +91,7 @@ pub enum HandleMsg {
 {
   "receive": {
     "amount": "10000000",
-    "sender": "terra1...",
+    "sender": "daodiseo1...",
     "msg": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
   }
 }
@@ -136,8 +136,8 @@ pub enum HandleMsg {
 ```javascript
 {
      "update_config": {
-        "owner": "terra...1",
-        "mirror_token": "terra1...",
+        "owner": "daodiseo...1",
+        "mirror_token": "daodiseo1...",
         "quorum": "0.1",
         "threshold": "0.5",
         "voting_period": 8,
@@ -447,7 +447,7 @@ pub struct ExecuteMsg {
   "create_poll": {
     "description": "...",
     "execute_msg": {
-      "contract": "terra1...",
+      "contract": "daodiseo1...",
       "msg": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
     },
     "link": "...",
@@ -547,8 +547,8 @@ pub struct ConfigResponse {
 ```javascript
 {
     "config_response": {
-        "owner": "terra1...",
-        "mirror_token": "terra1...",
+        "owner": "daodiseo1...",
+        "mirror_token": "daodiseo1...",
         "quorum": "0.1",
         "threshold": "0.5",
         "voting_period": 100000,
@@ -676,7 +676,7 @@ pub struct StakerResponse {
 ```javascript
 {
   "staker": {
-    "address": "terra1..."
+    "address": "daodiseo1..."
   }
 }
 ```
@@ -789,7 +789,7 @@ pub struct PollResponse {
 {
     "poll_response": {
         "id": 8,
-        "creator": "terra1...",
+        "creator": "daodiseo1...",
         "status": "in_progress",
         "end_height": 1000000,
         "title": "Register mCOIN Parameters",
@@ -892,7 +892,7 @@ pub struct PollsResponse {
         "polls": [
             "poll_response": {
                 "id": 8,
-                "creator": "terra1...",
+                "creator": "daodiseo1...",
                 "status": "in_progress",
                 "end_height": 1000000,
                 "title": "Register mCOIN Parameters",
@@ -969,7 +969,7 @@ pub struct VotersResponseItem {
   "voters": {
     "limit": 8,
     "poll_id": 8,
-    "start_after": "terra1..."
+    "start_after": "daodiseo1..."
   }
 }
 ```
@@ -987,7 +987,7 @@ pub struct VotersResponseItem {
 ```rust
 {
     "voter_response": {
-        "voter": "terra1...",
+        "voter": "daodiseo1...",
         "vote": "yes",
         "balance": "1000000"
     }

@@ -2,15 +2,15 @@
 
 #### 1. What are Mirror synthetic assets?
 
-The aim of mAssets is to mimic the price trends of real-world exchange-traded underlying assets and give investors access to not only home markets but also foreign markets as well. While mAAPL tries to closely represent the movements of AAPL stock, users are not afforded any rights of the underlying asset and tracking errors may arise due to the imbalances in trading volume in the underlying markets and the Terraswap markets.
+The aim of mAssets is to mimic the price trends of real-world exchange-traded underlying assets and give investors access to not only home markets but also foreign markets as well. While mAAPL tries to closely represent the movements of AAPL stock, users are not afforded any rights of the underlying asset and tracking errors may arise due to the imbalances in trading volume in the underlying markets and the Daodiseoswap markets.
 
 #### 2. How are mAssets actually traded?
 
-mAssets are traded through interacting with liquidity pools on Terraswap. For more information about the mechanism of the Terraswap, please see [here](https://terraswap.io).
+mAssets are traded through interacting with liquidity pools on Daodiseoswap. For more information about the mechanism of the Daodiseoswap, please see [here](https://daodiseoswap.io).
 
 #### 3. Do I have to go through the KYC process?
 
-Mirror aims to be decentralized in all aspects including whitelisting, governance, minting, and trading. As a result, as long as you have UST balance, you are able to perform all functions available on both the Mirror protocol as well as Mirror protocol-owned Terraswap pools without any need to go through a KYC process.
+Mirror aims to be decentralized in all aspects including whitelisting, governance, minting, and trading. As a result, as long as you have UST balance, you are able to perform all functions available on both the Mirror protocol as well as Mirror protocol-owned Daodiseoswap pools without any need to go through a KYC process.
 
 #### 4. How are corporate actions and dividends handled?
 
@@ -18,7 +18,7 @@ Corporate actions are handled through an asset migration process discussed [here
 
 #### 5. What are the trading commissions composed of?
 
-There is a fixed fee called the LP commission is 0.30% which serves as a reward for liquidity providers for Mirror-related pools on Terraswap. More detailed information can be found [here](protocol/terraswap.md).
+There is a fixed fee called the LP commission is 0.30% which serves as a reward for liquidity providers for Mirror-related pools on Daodiseoswap. More detailed information can be found [here](protocol/daodiseoswap.md).
 
 #### 6. What does it mean to mint an mAsset?
 
@@ -36,7 +36,7 @@ _Figure 1: When the minted asset’s price rises and the collateral ratio falls 
 
 #### 7. What hours can I trade and mint mAssets?
 
-mAsset liquidity is provided directly through the Terraswap liquidity pools, and as such, they can be traded irrespective of market hours.
+mAsset liquidity is provided directly through the Daodiseoswap liquidity pools, and as such, they can be traded irrespective of market hours.
 
 Unlike trading, the oracle feeder is used to price the value of mAsset for minting. The oracle feeder stops operating when real-world market hours are closed, so minting transactions on Mirror Protocol will fail.
 
@@ -58,9 +58,9 @@ Without the trust that mAssets should be pegged to oracle prices, mAsset prices 
 
 #### 9. What are the benefits of providing liquidity?
 
-Providing liquidity for the Mirror Protocol is equivalent to locking up your liquidity in Terraswap. By doing so, you ensure that there is a sufficient supply of assets to be traded at any point in time. As compensation for providing liquidity, you will receive LP tokens which accrue trading commission charged by the protocol. In addition, staking these LP tokens provides inflationary rewards in the form of MIR tokens. To learn more about the specifics, see [here](broken-reference).
+Providing liquidity for the Mirror Protocol is equivalent to locking up your liquidity in Daodiseoswap. By doing so, you ensure that there is a sufficient supply of assets to be traded at any point in time. As compensation for providing liquidity, you will receive LP tokens which accrue trading commission charged by the protocol. In addition, staking these LP tokens provides inflationary rewards in the form of MIR tokens. To learn more about the specifics, see [here](broken-reference).
 
-#### 10. Is there any risk to providing liquidity to the Terraswap pools?
+#### 10. Is there any risk to providing liquidity to the Daodiseoswap pools?
 
 You are able to remove your liquidity provided at any point in time. While there is no risk of losing any of your liquidity in most circumstances, in the case of large changes in price of the tokens provided, the return on providing liquidity may be less than the absolute price variation (known as _impermanent loss_). This is the [same risk](https://uniswap.org/docs/v2/advanced-topics/understanding-returns/) faced by liquidity providers on Uniswap.
 

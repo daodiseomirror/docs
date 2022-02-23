@@ -17,7 +17,7 @@ pub struct InitMsg {
 | Key          | Type      | Description                                                  |
 | ------------ | --------- | ------------------------------------------------------------ |
 | `owner`      | HumanAddr | Address of the owner who can register new assets             |
-| `base_asset` | String    | Asset in which prices will be denominated (default TerraUSD) |
+| `base_asset` | String    | Asset in which prices will be denominated (default DaodiseoUSD) |
 
 ## HandleMsg
 
@@ -42,7 +42,7 @@ pub enum HandleMsg {
 ```javascript
 {
   "update_config": {
-    "owner": "terra1..."
+    "owner": "daodiseo1..."
   }
 }
 ```
@@ -77,8 +77,8 @@ pub enum HandleMsg {
 ```javascript
 {
   "register_asset": {
-    "asset_token": "terra1...",
-    "feeder": "terra1..."
+    "asset_token": "daodiseo1...",
+    "feeder": "daodiseo1..."
   }
 }
 ```
@@ -112,8 +112,8 @@ pub enum HandleMsg {
 {
   "feed_price": {
     "prices": [
-      ["terra1...", "123.456789"],
-      ["terra1...", "123.456789"]
+      ["daodiseo1...", "123.456789"],
+      ["daodiseo1...", "123.456789"]
     ]
   }
 }
@@ -154,7 +154,7 @@ pub struct ConfigResponse {
 | Key          | Type            | Description                                                  |
 | ------------ | --------------- | ------------------------------------------------------------ |
 | `owner`      | HumanAddr       | Owner address                                                |
-| `base_asset` | String/`'uusd'` | Asset in which prices will be denominated (default TerraUSD) |
+| `base_asset` | String/`'uusd'` | Asset in which prices will be denominated (default DaodiseoUSD) |
 {% endtab %}
 
 {% tab title="JSON" %}
@@ -169,7 +169,7 @@ pub struct ConfigResponse {
 ```rust
 {
     "config_response": {
-        "owner": "terra1...",
+        "owner": "daodiseo1...",
         "base_asset": "uusd"
     }
 }
@@ -178,7 +178,7 @@ pub struct ConfigResponse {
 | Key          | Type            | Description                                                  |
 | ------------ | --------------- | ------------------------------------------------------------ |
 | `owner`      | HumanAddr       | Owner address                                                |
-| `base_asset` | String/`'uusd'` | Asset in which prices will be denominated (default TerraUSD) |
+| `base_asset` | String/`'uusd'` | Asset in which prices will be denominated (default DaodiseoUSD) |
 {% endtab %}
 {% endtabs %}
 
@@ -215,14 +215,14 @@ pub struct FeederResponse {
 | Key           | Type      | Description                              |
 | ------------- | --------- | ---------------------------------------- |
 | `asset_token` | HumanAddr | Contract address of asset token to query |
-| `feeder`      | HumanAddr | Terra address of price feeder            |
+| `feeder`      | HumanAddr | Daodiseo address of price feeder            |
 {% endtab %}
 
 {% tab title="JSON" %}
 ```javascript
 {
   "asset": {
-    "asset_token": "terra1..."
+    "asset_token": "daodiseo1..."
   }
 }
 ```
@@ -236,8 +236,8 @@ pub struct FeederResponse {
 ```rust
 {
     "feeder_response": {
-        "asset_token": "terra1...",
-        "feeder": "terra1..."
+        "asset_token": "daodiseo1...",
+        "feeder": "daodiseo1..."
     }
 }
 ```
@@ -245,7 +245,7 @@ pub struct FeederResponse {
 | Key           | Type      | Description                              |
 | ------------- | --------- | ---------------------------------------- |
 | `asset_token` | HumanAddr | Contract address of asset token to query |
-| `feeder`      | HumanAddr | Terra address of price feeder            |
+| `feeder`      | HumanAddr | Daodiseo address of price feeder            |
 {% endtab %}
 {% endtabs %}
 
@@ -293,7 +293,7 @@ pub struct PriceResponse {
 ```javascript
 {
   "price": {
-    "base_asset": "terra1...",
+    "base_asset": "daodiseo1...",
     "quote_asset": "uusd"
   }
 }
@@ -368,7 +368,7 @@ pub struct PricesResponseElem {
 ```javascript
 {
   "prices": {
-    "start_after": "terra1...",
+    "start_after": "daodiseo1...",
     "limit": 8
   }
 }
@@ -384,7 +384,7 @@ pub struct PricesResponseElem {
 ```rust
 {
     "prices_response": {
-        "asset_token": "terra1...",
+        "asset_token": "daodiseo1...",
         "price": "123.456789",
         "last_updated_time": 10,
     }

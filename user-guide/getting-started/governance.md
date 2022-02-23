@@ -18,7 +18,7 @@ MIR tokens are distributed as a reward for staked LP tokens, which are generated
 
 In order to vote on governance polls, MIR must be staked to be used as voting power.
 
-1\. Navigate to the [**Governance**](https://terra.mirror.finance/gov) page and click **`Stake`**
+1\. Navigate to the [**Governance**](https://daodiseo.mirror.finance/gov) page and click **`Stake`**
 
 ![](<../../.gitbook/assets/image (130).png>)
 
@@ -38,7 +38,7 @@ MIR tokens that are voted to on-going governance polls will be unstakable when t
 
 ## Create Poll
 
-1. Navigate to the [**Governance**](https://terra.mirror.finance/gov) page and click `Create Poll`.
+1. Navigate to the [**Governance**](https://daodiseo.mirror.finance/gov) page and click `Create Poll`.
 
 ![](<../../.gitbook/assets/image (205).png>)
 
@@ -54,7 +54,7 @@ MIR tokens that are voted to on-going governance polls will be unstakable when t
 
 ## Vote on Poll
 
-1. Navigate to the [**Governance**](https://terra.mirror.finance/gov) page and select a poll that is `In Progress`.
+1. Navigate to the [**Governance**](https://daodiseo.mirror.finance/gov) page and select a poll that is `In Progress`.
 
 ![](<../../.gitbook/assets/image (196).png>)
 

@@ -11,12 +11,12 @@ After the initial bootstrapping of Mirror Protocol contracts, the Factory is ass
 | `mirror_token`         | HumanAddr | Contract address of Mirror Token (MIR)               |
 | `mint_contract`        | HumanAddr | Contract address of [Mirror Mint](mint.md)           |
 | `oracle_contract`      | HumanAddr | Contract address of [Mirror Oracle](oracle.md)       |
-| `terraswap_factory`    | HumanAddr | Contract address of Terraswap Factory                |
+| `daodiseoswap_factory`    | HumanAddr | Contract address of Daodiseoswap Factory                |
 | `staking_contract`     | HumanAddr | Contract address of [Mirror Staking](staking.md)     |
 | `commission_collector` | HumanAddr | Contract address of [Mirror Collector](collector.md) |
 | `mint_per_block`       | Uint128   | Amount of new MIR tokens to mint per block           |
 | `token_code_id`        | u64       | Code ID for CW20 contract for generating new mAssets |
-| `base_denom`           | String    | Native token denom for Terraswap pairs (TerraUSD)    |
+| `base_denom`           | String    | Native token denom for Daodiseoswap pairs (DaodiseoUSD)    |
 
 ## InitMsg
 
@@ -49,7 +49,7 @@ pub struct InitMsg {
 | Key                     | Type   | Description                                                                                                                                                                                                                                                                                                                          |
 | ----------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `token_code_id`         | u64    | Code ID for CW20 contract for generating new mAssets                                                                                                                                                                                                                                                                                 |
-| `base_denom`            | String | Native token denom for Terraswap pairs (TerraUSD)                                                                                                                                                                                                                                                                                    |
+| `base_denom`            | String | Native token denom for Daodiseoswap pairs (DaodiseoUSD)                                                                                                                                                                                                                                                                                    |
 | `distribution_schedule` | Vec    | <p>Distribution schedule for the minting of new MIR tokens. Each entry consists of:</p><ul><li>start time (seconds)</li><li>end time (seconds)</li><li>distribution amount for the interval</li></ul><p>Determines the total amount of new MIR tokens minted as rewards for LP stakers over the interval [start time, end time].</p> |
 
 ## HandleMsg
@@ -71,7 +71,7 @@ pub enum HandleMsg {
         oracle_contract: HumanAddr,
         owner: HumanAddr,
         staking_contract: HumanAddr,
-        terraswap_factory: HumanAddr,
+        daodiseoswap_factory: HumanAddr,
     }
 }
 ```
@@ -81,13 +81,13 @@ pub enum HandleMsg {
 ```javascript
 {
   "post_initialize": {
-    "commission_collector": "terra1...",
-    "mint_contract": "terra1...",
-    "mirror_token": "terra1...",
-    "oracle_contract": "terra1...",
-    "owner": "terra1...",
-    "staking_contract": "terra1...",
-    "terraswap_factory": "terra1..."
+    "commission_collector": "daodiseo1...",
+    "mint_contract": "daodiseo1...",
+    "mirror_token": "daodiseo1...",
+    "oracle_contract": "daodiseo1...",
+    "owner": "daodiseo1...",
+    "staking_contract": "daodiseo1...",
+    "daodiseoswap_factory": "daodiseo1..."
   }
 }
 ```
@@ -102,7 +102,7 @@ pub enum HandleMsg {
 | `oracle_contract`      | HumanAddr | Contract address of [Mirror Oracle](oracle.md)       |
 | `**owner`              | HumanAddr | Address of the owner of [Mirror Factory](factory.md) |
 | `staking_contract`     | HumanAddr | Contract address of [Mirror Staking](staking.md)     |
-| `terraswap_factory`    | HumanAddr | Contract address of Terraswap Factory                |
+| `daodiseoswap_factory`    | HumanAddr | Contract address of Daodiseoswap Factory                |
 
 ### `UpdateConfig`
 
@@ -127,7 +127,7 @@ pub enum HandleMsg {
 ```javascript
 {
   "update_config": {
-    "owner": "terra1...",
+    "owner": "daodiseo1...",
     "token_code_id": 8,
     "distribution_schedule": [
       [3600, 7200, "1000000"],
@@ -168,7 +168,7 @@ pub enum HandleMsg {
 ```javascript
 {
     "update_weight": {
-        "asset_token": "terra1...",
+        "asset_token": "daodiseo1...",
         "weight": 8
     }
 }
@@ -183,12 +183,12 @@ pub enum HandleMsg {
 
 ### `Whitelist`
 
-Introduces a new mAsset to the protocol and creates markets on Terraswap. This process will:
+Introduces a new mAsset to the protocol and creates markets on Daodiseoswap. This process will:
 
-* Instantiate the mAsset contract as a new Terraswap CW20 token
+* Instantiate the mAsset contract as a new Daodiseoswap CW20 token
 * Register the mAsset with [Mirror Oracle](oracle.md) and [Mirror Mint](mint.md)
-* Create a new Terraswap Pair for the new mAsset against TerraUSD
-* Instantiate the LP Token contract associated with the pool as a new Terraswap CW20 token
+* Create a new Daodiseoswap Pair for the new mAsset against DaodiseoUSD
+* Instantiate the LP Token contract associated with the pool as a new Daodiseoswap CW20 token
 * Register the LP token with the [Mirror Staking](staking.md) contract
 
 {% tabs %}
@@ -223,7 +223,7 @@ pub struct Params {
 {
   "whitelist": {
     "name": "Mirrored Apple Derivative",
-    "oracle_feeder": "terra1...",
+    "oracle_feeder": "daodiseo1...",
     "params": {
       "auction_discount": "0.2",
       "min_collateral_ratio": "1.5",
@@ -278,7 +278,7 @@ pub enum HandleMsg {
 ```javascript
 {
   "token_creation_hook": {
-    "oracle_feeder": "terra1..."
+    "oracle_feeder": "daodiseo1..."
   }
 }
 ```
@@ -289,7 +289,7 @@ pub enum HandleMsg {
 | --------------- | --------- | ----------------------------------- |
 | `oracle_feeder` | HumanAddr | Address of Oracle Feeder for mAsset |
 
-### `TerraswapCreationHook`
+### `DaodiseoswapCreationHook`
 
 `(INTERNAL)`
 
@@ -301,7 +301,7 @@ Called after mAsset token contract is created in the [Whitelist](factory.md#whit
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
 pub struct enum HandleMsg {
-    TerraswapCreationHook {
+    DaodiseoswapCreationHook {
         asset_token: HumanAddr,
     }
 }
@@ -311,8 +311,8 @@ pub struct enum HandleMsg {
 {% tab title="JSON" %}
 ```javascript
 {
-  "terraswap_creation_hook": {
-    "asset_token": "terra1..."
+  "daodiseoswap_creation_hook": {
+    "asset_token": "daodiseo1..."
   }
 }
 ```
@@ -345,7 +345,7 @@ pub enum HandleMsg {
 ```javascript
 {
   "pass_command": {
-    "contract_addr": "terra1...",
+    "contract_addr": "daodiseo1...",
     "msg": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
   }
 }
@@ -409,7 +409,7 @@ pub enum HandleMsg {
 ```javascript
 {
     "revoke_asset": {
-        "asset_token": "terra1...",
+        "asset_token": "daodiseo1...",
         "end_price": "123.456789"
     }
 }
@@ -447,7 +447,7 @@ pub enum HandleMsg {
 {
   "migrate_asset": {
     "end_price": "123.456789",
-    "asset_token": "terra1...",
+    "asset_token": "daodiseo1...",
     "name": "...",
     "symbol": "..."
   }
@@ -490,7 +490,7 @@ pub struct ConfigResponse {
     pub staking_contract: HumanAddr,
     pub commission_collector: HumanAddr,
     pub oracle_contract: HumanAddr,
-    pub terraswap_factory: HumanAddr,
+    pub daodiseoswap_factory: HumanAddr,
     pub token_code_id: u64,
     pub base_denom: String,
     pub genesis_time: u64,
@@ -506,9 +506,9 @@ pub struct ConfigResponse {
 | `staking_contract`      | HumanAddr                | Contract address of Mirror Oracle                                                                                                                                                                                                                                                                             |
 | `commission_collector`  | HumanAddr                | Contract address of Mirror Collector                                                                                                                                                                                                                                                                          |
 | `oracle_contract`       | HumanAddr                | Contract address of Mirror Oracle                                                                                                                                                                                                                                                                             |
-| `terraswap_factory`     | HumanAddr                | Contract address of Terraswap Factory                                                                                                                                                                                                                                                                         |
+| `daodiseoswap_factory`     | HumanAddr                | Contract address of Daodiseoswap Factory                                                                                                                                                                                                                                                                         |
 | `token_code_id`         | u64                      | Code ID for CW20 contract for generating new mAssets                                                                                                                                                                                                                                                          |
-| `base_denom`            | String                   | Native token denom for Terraswaap pairs (TerraUSD)                                                                                                                                                                                                                                                            |
+| `base_denom`            | String                   | Native token denom for Daodiseoswaap pairs (DaodiseoUSD)                                                                                                                                                                                                                                                            |
 | `genesis_time`          | u64                      | Block height which the Factory contract was instantiated                                                                                                                                                                                                                                                      |
 | `distribution_schedule` | Vec<(u64, u64, Uint128)> | <p>Distribution schedule for the minting of new MIR tokens. Each entry consists of:<br>- start time (seconds)<br>- end time (seconds)<br>distribution amount for the interval<br>Determines the total amount of new MIR tokens minted as rewards for LP stakers over the interval [start time, end time].</p> |
 {% endtab %}
@@ -525,13 +525,13 @@ pub struct ConfigResponse {
 ```javascript
 {
     "config_response": {
-        "owner": "terra1..."
-        "mirror_token": "terra1...",
-        "mint_contract": "terra1...",
-        "staking_contract": "terra1...",
-        "commission_collector": "terra1...",
-        "oracle_contract": "terra1...",
-        "terraswap_factory": "terra1...",
+        "owner": "daodiseo1..."
+        "mirror_token": "daodiseo1...",
+        "mint_contract": "daodiseo1...",
+        "staking_contract": "daodiseo1...",
+        "commission_collector": "daodiseo1...",
+        "oracle_contract": "daodiseo1...",
+        "daodiseoswap_factory": "daodiseo1...",
         "token_code_id": 8,
         "base_denom": "uusd",
         "genesis_time": 1000000,
@@ -551,9 +551,9 @@ pub struct ConfigResponse {
 | `staking_contract`      | HumanAddr                | Contract address of Mirror Oracle                                                                                                                                                                                                                                                                         |
 | `commission_collector`  | HumanAddr                | Contract address of Mirror Collector                                                                                                                                                                                                                                                                      |
 | `oracle_contract`       | HumanAddr                | Contract address of Mirror Oracle                                                                                                                                                                                                                                                                         |
-| `terraswap_factory`     | HumanAddr                | Contract address of Terraswap Factory                                                                                                                                                                                                                                                                     |
+| `daodiseoswap_factory`     | HumanAddr                | Contract address of Daodiseoswap Factory                                                                                                                                                                                                                                                                     |
 | `token_code_id`         | u64                      | Code ID for CW20 contract for generating new mAssets                                                                                                                                                                                                                                                      |
-| `base_denom`            | String                   | Native token denom for Terraswaap pairs (TerraUSD)                                                                                                                                                                                                                                                        |
+| `base_denom`            | String                   | Native token denom for Daodiseoswaap pairs (DaodiseoUSD)                                                                                                                                                                                                                                                        |
 | `genesis_time`          | u64                      | Block height which the Factory contract was instantiated                                                                                                                                                                                                                                                  |
 | `distribution_schedule` | Vec<(u64, u64, Uint128)> | <p>Distribution schedule for the minting of new MIR tokens. Each entry consists of:<br>start time (seconds)<br>end time (seconds)<br>distribution amount for the interval<br>Determines the total amount of new MIR tokens minted as rewards for LP stakers over the interval [start time, end time].</p> |
 {% endtab %}
@@ -610,8 +610,8 @@ pub struct DistributionInfoResponse {
 {
     "distribution_info_response": {
         "weights": [
-            ["terra1...", 8],
-            ["terra1...", 8]
+            ["daodiseo1...", 8],
+            ["daodiseo1...", 8]
         ],
         "last_distributed": 3600
     }

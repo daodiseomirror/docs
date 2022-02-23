@@ -1,11 +1,11 @@
 # Trade
 
-The **Market** page provides an interface for trading and borrowing of mAsset tokens. **Trades** are made against the asset's Terraswap pool and priced algorithmically by its [automated market-making algorithm](../../protocol/terraswap.md#pricing).&#x20;
+The **Market** page provides an interface for trading and borrowing of mAsset tokens. **Trades** are made against the asset's Daodiseoswap pool and priced algorithmically by its [automated market-making algorithm](../../protocol/daodiseoswap.md#pricing).&#x20;
 
 ## Trade
 
 {% hint style="info" %}
-The Trade interface is directly connected to [Terraswap](../../protocol/terraswap.md).
+The Trade interface is directly connected to [Daodiseoswap](../../protocol/daodiseoswap.md).
 {% endhint %}
 
 1\. Navigate to the **Market** page. Select or search for an asset to trade.
@@ -40,7 +40,7 @@ Limit Order enables users to buy or sell an asset when the price reaches the Bid
 
 3\. When entering the below information, `Order Value` will be automatically calculated:
 
-* **Bid/Ask Price:** The desired price of an mAsset decided by the user. When the Terraswap price of the asset exceeds the Bid/Ask Price by slippage and transaction fee amount, user's order can be executed.
+* **Bid/Ask Price:** The desired price of an mAsset decided by the user. When the Daodiseoswap price of the asset exceeds the Bid/Ask Price by slippage and transaction fee amount, user's order can be executed.
 * **Order Amount:** Quantity of the mAsset to trade at bid/ask price.
 
 ![](<../../.gitbook/assets/image (191).png>)
@@ -51,4 +51,4 @@ Limit Order enables users to buy or sell an asset when the price reaches the Bid
 
 Limit Order is visible on **My Page**. Users can select Cancel from Actions column to remove the submitted Limit Order.
 
-_Please note that your Limit Order can be executed when Terraswap price of the mAsset **exceeds** the Limit Price due to slippage cause by size of your transaction against the liquidity pool._&#x20;
+_Please note that your Limit Order can be executed when Daodiseoswap price of the mAsset **exceeds** the Limit Price due to slippage cause by size of your transaction against the liquidity pool._&#x20;

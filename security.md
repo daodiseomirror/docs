@@ -23,7 +23,7 @@ Mirror offers substantial rewards for discoveries that can prevent the loss of a
 
 ### Scope
 
-The primary scope of the bug bounty program is for vulnerabilities affecting the on-chain Mirror Protocol, deployed to the Terra Mainnet, for contract addresses listed in this developer documentation. This list may change as new contracts are deployed, or as existing contracts are removed from usage.
+The primary scope of the bug bounty program is for vulnerabilities affecting the on-chain Mirror Protocol, deployed to the Daodiseo Mainnet, for contract addresses listed in this developer documentation. This list may change as new contracts are deployed, or as existing contracts are removed from usage.
 
 Vulnerabilities in contracts built on top of the protocol by third-party developers (such as smart contract wallets) are not in-scope, nor are vulnerabilities that require ownership of an admin key.
 

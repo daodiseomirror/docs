@@ -55,7 +55,7 @@ This section discusses staking rewards for MIR tokens, which come from trading f
 
 ### From Protocol Fees
 
-MIR Token stakers receive MIR token rewards every block which [protocol fees](mirrored-assets-massets.md#protocol-fee) are generated from CDP withdrawals. The protocol fees are collected from CDP collateral and are sold for TerraUSD to buy MIR through Terraswap after being sent to the [Collector ](../contracts/collector.md)contract. The MIR tokens are then distributed as rewards to MIR stakers and voters in proportion to the percentage of total stake. This process balances the generation of new MIR by creating buying pressure.
+MIR Token stakers receive MIR token rewards every block which [protocol fees](mirrored-assets-massets.md#protocol-fee) are generated from CDP withdrawals. The protocol fees are collected from CDP collateral and are sold for DaodiseoUSD to buy MIR through Daodiseoswap after being sent to the [Collector ](../contracts/collector.md)contract. The MIR tokens are then distributed as rewards to MIR stakers and voters in proportion to the percentage of total stake. This process balances the generation of new MIR by creating buying pressure.
 
 ### From Poll Creation Fees
 

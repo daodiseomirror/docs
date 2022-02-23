@@ -2,13 +2,13 @@
 
 Mirror Protocol is an **interchain** DeFi protocol, meaning that it can be accessed and interact with other decentralized applications across multiple blockchains.
 
-Terra blockchain, which Mirror Protocol is built on uses [Shuttle](https://github.com/terra-project/shuttle) bridge to enable interchain transfers between Terra, Ethereum, and Binance Smart Chain.&#x20;
+Daodiseo blockchain, which Mirror Protocol is built on uses [Shuttle](https://github.com/daodiseo-project/shuttle) bridge to enable interchain transfers between Daodiseo, Ethereum, and Binance Smart Chain.&#x20;
 
-A web application called [Terra Bridge](user-guide/terra-bridge.md) provides web interface to transfer tokens between different blockchains.&#x20;
+A web application called [Daodiseo Bridge](user-guide/daodiseo-bridge.md) provides web interface to transfer tokens between different blockchains.&#x20;
 
-## Terra
+## Daodiseo
 
-Mirror's core contracts are implemented on the [Terra blockchain](https://terra.money).
+Mirror's core contracts are implemented on the [Daodiseo blockchain](https://daodiseo.money).
 
 ### Mainnet (v2)
 
@@ -18,56 +18,56 @@ Network chain ID: `columbus-5`
 
 | Contract          | Address                                                                                                                                    |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Collector         | [terra1s4fllut0e6vw0k3fxsg4fs6fm2ad6hn0prqp3s](https://finder.terra.money/columbus-4/account/terra1s4fllut0e6vw0k3fxsg4fs6fm2ad6hn0prqp3s) |
-| Community         | [terra1x35fvy3sy47drd3qs288sm47fjzjnksuwpyl9k](https://finder.terra.money/columbus-4/account/terra1x35fvy3sy47drd3qs288sm47fjzjnksuwpyl9k) |
-| Factory           | [terra1mzj9nsxx0lxlaxnekleqdy8xnyw2qrh3uz6h8p](https://finder.terra.money/columbus-4/account/terra1mzj9nsxx0lxlaxnekleqdy8xnyw2qrh3uz6h8p) |
-| Gov               | [terra1wh39swv7nq36pnefnupttm2nr96kz7jjddyt2x](https://finder.terra.money/columbus-4/account/terra1wh39swv7nq36pnefnupttm2nr96kz7jjddyt2x) |
-| Mint              | [terra1wfz7h3aqf4cjmjcvc6s8lxdhh7k30nkczyf0mj](https://finder.terra.money/columbus-4/account/terra1wfz7h3aqf4cjmjcvc6s8lxdhh7k30nkczyf0mj) |
-| Oracle            | [terra1t6xe0txzywdg85n6k8c960cuwgh6l8esw6lau9](https://finder.terra.money/columbus-4/account/terra1t6xe0txzywdg85n6k8c960cuwgh6l8esw6lau9) |
-| Staking           | [terra17f7zu97865jmknk7p2glqvxzhduk78772ezac5](https://finder.terra.money/columbus-4/account/terra17f7zu97865jmknk7p2glqvxzhduk78772ezac5) |
-| Airdrop           | [terra1kalp2knjm4cs3f59ukr4hdhuuncp648eqrgshw](https://finder.terra.money/columbus-4/account/terra1kalp2knjm4cs3f59ukr4hdhuuncp648eqrgshw) |
-| Limit Order       | [terra1zpr8tq3ts96mthcdkukmqq4y9lhw0ycevsnw89](https://finder.terra.money/columbus-4/address/terra1zpr8tq3ts96mthcdkukmqq4y9lhw0ycevsnw89) |
-| Collateral Oracle | [terra1pmlh0j5gpzh2wsmyd3cuk39cgh2gfwk6h5wy9j](https://finder.terra.money/columbus-4/address/terra1pmlh0j5gpzh2wsmyd3cuk39cgh2gfwk6h5wy9j) |
-| Lock              | [terra169urmlm8wcltyjsrn7gedheh7dker69ujmerv2](https://finder.terra.money/columbus-4/address/terra169urmlm8wcltyjsrn7gedheh7dker69ujmerv2) |
-| Short Reward      | [terra16mlzdwqq5qs6a23250lq0fftke8v80sapc5kye](https://finder.terra.money/columbus-4/address/terra16mlzdwqq5qs6a23250lq0fftke8v80sapc5kye) |
+| Collector         | [daodiseo1s4fllut0e6vw0k3fxsg4fs6fm2ad6hn0prqp3s](https://finder.daodiseo.money/columbus-4/account/daodiseo1s4fllut0e6vw0k3fxsg4fs6fm2ad6hn0prqp3s) |
+| Community         | [daodiseo1x35fvy3sy47drd3qs288sm47fjzjnksuwpyl9k](https://finder.daodiseo.money/columbus-4/account/daodiseo1x35fvy3sy47drd3qs288sm47fjzjnksuwpyl9k) |
+| Factory           | [daodiseo1mzj9nsxx0lxlaxnekleqdy8xnyw2qrh3uz6h8p](https://finder.daodiseo.money/columbus-4/account/daodiseo1mzj9nsxx0lxlaxnekleqdy8xnyw2qrh3uz6h8p) |
+| Gov               | [daodiseo1wh39swv7nq36pnefnupttm2nr96kz7jjddyt2x](https://finder.daodiseo.money/columbus-4/account/daodiseo1wh39swv7nq36pnefnupttm2nr96kz7jjddyt2x) |
+| Mint              | [daodiseo1wfz7h3aqf4cjmjcvc6s8lxdhh7k30nkczyf0mj](https://finder.daodiseo.money/columbus-4/account/daodiseo1wfz7h3aqf4cjmjcvc6s8lxdhh7k30nkczyf0mj) |
+| Oracle            | [daodiseo1t6xe0txzywdg85n6k8c960cuwgh6l8esw6lau9](https://finder.daodiseo.money/columbus-4/account/daodiseo1t6xe0txzywdg85n6k8c960cuwgh6l8esw6lau9) |
+| Staking           | [daodiseo17f7zu97865jmknk7p2glqvxzhduk78772ezac5](https://finder.daodiseo.money/columbus-4/account/daodiseo17f7zu97865jmknk7p2glqvxzhduk78772ezac5) |
+| Airdrop           | [daodiseo1kalp2knjm4cs3f59ukr4hdhuuncp648eqrgshw](https://finder.daodiseo.money/columbus-4/account/daodiseo1kalp2knjm4cs3f59ukr4hdhuuncp648eqrgshw) |
+| Limit Order       | [daodiseo1zpr8tq3ts96mthcdkukmqq4y9lhw0ycevsnw89](https://finder.daodiseo.money/columbus-4/address/daodiseo1zpr8tq3ts96mthcdkukmqq4y9lhw0ycevsnw89) |
+| Collateral Oracle | [daodiseo1pmlh0j5gpzh2wsmyd3cuk39cgh2gfwk6h5wy9j](https://finder.daodiseo.money/columbus-4/address/daodiseo1pmlh0j5gpzh2wsmyd3cuk39cgh2gfwk6h5wy9j) |
+| Lock              | [daodiseo169urmlm8wcltyjsrn7gedheh7dker69ujmerv2](https://finder.daodiseo.money/columbus-4/address/daodiseo169urmlm8wcltyjsrn7gedheh7dker69ujmerv2) |
+| Short Reward      | [daodiseo16mlzdwqq5qs6a23250lq0fftke8v80sapc5kye](https://finder.daodiseo.money/columbus-4/address/daodiseo16mlzdwqq5qs6a23250lq0fftke8v80sapc5kye) |
 
 #### Asset Contracts
 
 | Asset  | Mainnet                                                                                                                                    |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| MIR    | [terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6](https://finder.terra.money/columbus-4/account/terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6) |
-| mAAPL  | [terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz](https://finder.terra.money/columbus-4/account/terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz) |
-| mGOOGL | [terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt](https://finder.terra.money/columbus-4/account/terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt) |
-| mTSLA  | [terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh](https://finder.terra.money/columbus-4/account/terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh) |
-| mNFLX  | [terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k](https://finder.terra.money/columbus-4/account/terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k) |
-| mQQQ   | [terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp](https://finder.terra.money/columbus-4/account/terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp) |
-| mTWTR  | [terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg](https://finder.terra.money/columbus-4/account/terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg) |
-| mMSFT  | [terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6](https://finder.terra.money/columbus-4/account/terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6) |
-| mAMZN  | [terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2](https://finder.terra.money/columbus-4/account/terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2) |
-| mBABA  | [terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa](https://finder.terra.money/columbus-4/account/terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa) |
-| mIAU   | [terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec](https://finder.terra.money/columbus-4/account/terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec) |
-| mSLV   | [terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp](https://finder.terra.money/columbus-4/account/terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp) |
-| mUSO   | [terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf](https://finder.terra.money/columbus-4/account/terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf) |
-| mVIXY  | [terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45](https://finder.terra.money/columbus-4/account/terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45) |
-| mFB    | [terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7](https://finder.terra.money/columbus-4/account/terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7) |
-| mCOIN  | [terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph](https://finder.terra.money/columbus-4/address/terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph) |
-| mHOOD  | [terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr](https://finder.terra.money/columbus-5/address/terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr) |
-| mARKK  | [terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6](https://finder.terra.money/columbus-5/address/terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6) |
-| mGLXY  | [terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls](https://finder.terra.money/columbus-5/address/terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls) |
-| mSQ    | [terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh](https://finder.terra.money/columbus-5/address/terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh) |
-| mABNB  | [terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n](https://finder.terra.money/columbus-5/address/terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n) |
-| mSPY   | [terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc](https://finder.terra.money/columbus-5/address/terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc) |
-| mDOT   | [terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r](https://finder.terra.money/columbus-5/address/terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r) |
-| mAMD   | [terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z](https://finder.terra.money/columbus-5/address/terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z) |
-| mGME   | [terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p](https://finder.terra.money/columbus-5/address/terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p) |
-| mAMC   | [terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy](https://finder.terra.money/columbus-5/address/terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy) |
-| mGS    | [terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v](networks.md#terra)                                                                          |
-| mKO    | [terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm](https://finder.terra.money/mainnet/address/terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm)    |
-| mPYPL  | [terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx](https://finder.terra.money/mainnet/address/terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx)    |
-| mSBUX  | [terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga](https://finder.terra.money/mainnet/address/terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga)    |
-| mJNJ   | [terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2](https://finder.terra.money/mainnet/address/terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2)    |
-| mNVDA  | [terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8](https://finder.terra.money/mainnet/address/terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8)    |
-| mDIS   | [terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5](https://finder.terra.money/mainnet/address/terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5)    |
+| MIR    | [daodiseo15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6](https://finder.daodiseo.money/columbus-4/account/daodiseo15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6) |
+| mAAPL  | [daodiseo1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz](https://finder.daodiseo.money/columbus-4/account/daodiseo1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz) |
+| mGOOGL | [daodiseo1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt](https://finder.daodiseo.money/columbus-4/account/daodiseo1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt) |
+| mTSLA  | [daodiseo14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh](https://finder.daodiseo.money/columbus-4/account/daodiseo14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh) |
+| mNFLX  | [daodiseo1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k](https://finder.daodiseo.money/columbus-4/account/daodiseo1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k) |
+| mQQQ   | [daodiseo1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp](https://finder.daodiseo.money/columbus-4/account/daodiseo1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp) |
+| mTWTR  | [daodiseo1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg](https://finder.daodiseo.money/columbus-4/account/daodiseo1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg) |
+| mMSFT  | [daodiseo1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6](https://finder.daodiseo.money/columbus-4/account/daodiseo1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6) |
+| mAMZN  | [daodiseo165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2](https://finder.daodiseo.money/columbus-4/account/daodiseo165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2) |
+| mBABA  | [daodiseo1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa](https://finder.daodiseo.money/columbus-4/account/daodiseo1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa) |
+| mIAU   | [daodiseo15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec](https://finder.daodiseo.money/columbus-4/account/daodiseo15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec) |
+| mSLV   | [daodiseo1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp](https://finder.daodiseo.money/columbus-4/account/daodiseo1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp) |
+| mUSO   | [daodiseo1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf](https://finder.daodiseo.money/columbus-4/account/daodiseo1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf) |
+| mVIXY  | [daodiseo1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45](https://finder.daodiseo.money/columbus-4/account/daodiseo1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45) |
+| mFB    | [daodiseo1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7](https://finder.daodiseo.money/columbus-4/account/daodiseo1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7) |
+| mCOIN  | [daodiseo18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph](https://finder.daodiseo.money/columbus-4/address/daodiseo18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph) |
+| mHOOD  | [daodiseo18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr](https://finder.daodiseo.money/columbus-5/address/daodiseo18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr) |
+| mARKK  | [daodiseo1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6](https://finder.daodiseo.money/columbus-5/address/daodiseo1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6) |
+| mGLXY  | [daodiseo1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls](https://finder.daodiseo.money/columbus-5/address/daodiseo1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls) |
+| mSQ    | [daodiseo1u43zu5amjlsgty5j64445fr9yglhm53m576ugh](https://finder.daodiseo.money/columbus-5/address/daodiseo1u43zu5amjlsgty5j64445fr9yglhm53m576ugh) |
+| mABNB  | [daodiseo1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n](https://finder.daodiseo.money/columbus-5/address/daodiseo1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n) |
+| mSPY   | [daodiseo1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc](https://finder.daodiseo.money/columbus-5/address/daodiseo1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc) |
+| mDOT   | [daodiseo19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r](https://finder.daodiseo.money/columbus-5/address/daodiseo19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r) |
+| mAMD   | [daodiseo18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z](https://finder.daodiseo.money/columbus-5/address/daodiseo18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z) |
+| mGME   | [daodiseo1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p](https://finder.daodiseo.money/columbus-5/address/daodiseo1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p) |
+| mAMC   | [daodiseo1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy](https://finder.daodiseo.money/columbus-5/address/daodiseo1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy) |
+| mGS    | [daodiseo137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v](networks.md#daodiseo)                                                                          |
+| mKO    | [daodiseo1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm](https://finder.daodiseo.money/mainnet/address/daodiseo1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm)    |
+| mPYPL  | [daodiseo1rh2907984nudl7vh56qjdtvv7947z4dujj92sx](https://finder.daodiseo.money/mainnet/address/daodiseo1rh2907984nudl7vh56qjdtvv7947z4dujj92sx)    |
+| mSBUX  | [daodiseo1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga](https://finder.daodiseo.money/mainnet/address/daodiseo1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga)    |
+| mJNJ   | [daodiseo1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2](https://finder.daodiseo.money/mainnet/address/daodiseo1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2)    |
+| mNVDA  | [daodiseo1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8](https://finder.daodiseo.money/mainnet/address/daodiseo1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8)    |
+| mDIS   | [daodiseo149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5](https://finder.daodiseo.money/mainnet/address/daodiseo149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5)    |
 
 ### Testnet (v2)
 
@@ -77,55 +77,55 @@ Network chain ID: `bombay-12`
 
 | Contract          | Address                                                                                                                                      |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Collector         | [terra1v046ktavwzlyct5gh8ls767fh7hc4gxc95grxy](https://finder.terra.money/tequila-0004/account/terra1v046ktavwzlyct5gh8ls767fh7hc4gxc95grxy) |
-| Community         | [terra10qm80sfht0zhh3gaeej7sd4f92tswc44fn000q](https://finder.terra.money/tequila-0004/account/terra10qm80sfht0zhh3gaeej7sd4f92tswc44fn000q) |
-| Factory           | [terra10l9xc9eyrpxd5tqjgy6uxrw7dd9cv897cw8wdr](https://finder.terra.money/tequila-0004/account/terra10l9xc9eyrpxd5tqjgy6uxrw7dd9cv897cw8wdr) |
-| Gov               | [terra12r5ghc6ppewcdcs3hkewrz24ey6xl7mmpk478s](https://finder.terra.money/tequila-0004/account/terra12r5ghc6ppewcdcs3hkewrz24ey6xl7mmpk478s) |
-| Mint              | [terra1s9ehcjv0dqj2gsl72xrpp0ga5fql7fj7y3kq3w](https://finder.terra.money/tequila-0004/account/terra1s9ehcjv0dqj2gsl72xrpp0ga5fql7fj7y3kq3w) |
-| Oracle            | [terra1uvxhec74deupp47enh7z5pk55f3cvcz8nj4ww9](https://finder.terra.money/tequila-0004/account/terra1uvxhec74deupp47enh7z5pk55f3cvcz8nj4ww9) |
-| Staking           | [terra1a06dgl27rhujjphsn4drl242ufws267qxypptx](https://finder.terra.money/tequila-0004/account/terra1a06dgl27rhujjphsn4drl242ufws267qxypptx) |
-| Airdrop           | [terra1p6nvyw7vz3fgpy4nyh3q3vc09e65sr97ejxn2p](https://finder.terra.money/tequila-0004/account/terra1p6nvyw7vz3fgpy4nyh3q3vc09e65sr97ejxn2p) |
-| Limit Order       | [terra1vc4ch0z3n6c23f9uywzy5yqaj2gmpnam8qgge7](https://finder.terra.money/tequila-0004/account/terra1vc4ch0z3n6c23f9uywzy5yqaj2gmpnam8qgge7) |
-| Collateral Oracle | [terra1q3ls6u2glsazdeu7dxggk8d04elnvmsg0ung6n](https://finder.terra.money/tequila-0004/account/terra1q3ls6u2glsazdeu7dxggk8d04elnvmsg0ung6n) |
-| Lock              | [terra1pcxghd4dyf950mcs0kmlp7lvnrjsnl6qlfldwj](https://finder.terra.money/tequila-0004/address/terra1pcxghd4dyf950mcs0kmlp7lvnrjsnl6qlfldwj) |
+| Collector         | [daodiseo1v046ktavwzlyct5gh8ls767fh7hc4gxc95grxy](https://finder.daodiseo.money/tequila-0004/account/daodiseo1v046ktavwzlyct5gh8ls767fh7hc4gxc95grxy) |
+| Community         | [daodiseo10qm80sfht0zhh3gaeej7sd4f92tswc44fn000q](https://finder.daodiseo.money/tequila-0004/account/daodiseo10qm80sfht0zhh3gaeej7sd4f92tswc44fn000q) |
+| Factory           | [daodiseo10l9xc9eyrpxd5tqjgy6uxrw7dd9cv897cw8wdr](https://finder.daodiseo.money/tequila-0004/account/daodiseo10l9xc9eyrpxd5tqjgy6uxrw7dd9cv897cw8wdr) |
+| Gov               | [daodiseo12r5ghc6ppewcdcs3hkewrz24ey6xl7mmpk478s](https://finder.daodiseo.money/tequila-0004/account/daodiseo12r5ghc6ppewcdcs3hkewrz24ey6xl7mmpk478s) |
+| Mint              | [daodiseo1s9ehcjv0dqj2gsl72xrpp0ga5fql7fj7y3kq3w](https://finder.daodiseo.money/tequila-0004/account/daodiseo1s9ehcjv0dqj2gsl72xrpp0ga5fql7fj7y3kq3w) |
+| Oracle            | [daodiseo1uvxhec74deupp47enh7z5pk55f3cvcz8nj4ww9](https://finder.daodiseo.money/tequila-0004/account/daodiseo1uvxhec74deupp47enh7z5pk55f3cvcz8nj4ww9) |
+| Staking           | [daodiseo1a06dgl27rhujjphsn4drl242ufws267qxypptx](https://finder.daodiseo.money/tequila-0004/account/daodiseo1a06dgl27rhujjphsn4drl242ufws267qxypptx) |
+| Airdrop           | [daodiseo1p6nvyw7vz3fgpy4nyh3q3vc09e65sr97ejxn2p](https://finder.daodiseo.money/tequila-0004/account/daodiseo1p6nvyw7vz3fgpy4nyh3q3vc09e65sr97ejxn2p) |
+| Limit Order       | [daodiseo1vc4ch0z3n6c23f9uywzy5yqaj2gmpnam8qgge7](https://finder.daodiseo.money/tequila-0004/account/daodiseo1vc4ch0z3n6c23f9uywzy5yqaj2gmpnam8qgge7) |
+| Collateral Oracle | [daodiseo1q3ls6u2glsazdeu7dxggk8d04elnvmsg0ung6n](https://finder.daodiseo.money/tequila-0004/account/daodiseo1q3ls6u2glsazdeu7dxggk8d04elnvmsg0ung6n) |
+| Lock              | [daodiseo1pcxghd4dyf950mcs0kmlp7lvnrjsnl6qlfldwj](https://finder.daodiseo.money/tequila-0004/address/daodiseo1pcxghd4dyf950mcs0kmlp7lvnrjsnl6qlfldwj) |
 
 #### Asset Contracts
 
 | Asset  | Address                                                                                                                                      |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| MIR    | [terra10llyp6v3j3her8u3ce66ragytu45kcmd9asj3u](https://finder.terra.money/tequila-0004/account/terra10llyp6v3j3her8u3ce66ragytu45kcmd9asj3u) |
-| mAAPL  | [terra16vfxm98rxlc8erj4g0sj5932dvylgmdufnugk0](https://finder.terra.money/tequila-0004/account/terra16vfxm98rxlc8erj4g0sj5932dvylgmdufnugk0) |
-| mGOOGL | [terra1qg9ugndl25567u03jrr79xur2yk9d632fke3h2](https://finder.terra.money/tequila-0004/account/terra1qg9ugndl25567u03jrr79xur2yk9d632fke3h2) |
-| mTSLA  | [terra1nslem9lgwx53rvgqwd8hgq7pepsry6yr3wsen4](https://finder.terra.money/tequila-0004/account/terra1nslem9lgwx53rvgqwd8hgq7pepsry6yr3wsen4) |
-| mNFLX  | [terra1djnlav60utj06kk9dl7defsv8xql5qpryzvm3h](https://finder.terra.money/tequila-0004/account/terra1djnlav60utj06kk9dl7defsv8xql5qpryzvm3h) |
-| mQQQ   | [terra18yx7ff8knc98p07pdkhm3u36wufaeacv47fuha](https://finder.terra.money/tequila-0004/account/terra18yx7ff8knc98p07pdkhm3u36wufaeacv47fuha) |
-| mTWTR  | [terra1ax7mhqahj6vcqnnl675nqq2g9wghzuecy923vy](https://finder.terra.money/tequila-0004/account/terra1ax7mhqahj6vcqnnl675nqq2g9wghzuecy923vy) |
-| mMSFT  | [terra12s2h8vlztjwu440khpc0063p34vm7nhu25w4p9](https://finder.terra.money/tequila-0004/account/terra12s2h8vlztjwu440khpc0063p34vm7nhu25w4p9) |
-| mAMZN  | [terra12saaecsqwxj04fn0jsv4jmdyp6gylptf5tksge](https://finder.terra.money/tequila-0004/account/terra12saaecsqwxj04fn0jsv4jmdyp6gylptf5tksge) |
-| mBABA  | [terra15dr4ah3kha68kam7a907pje9w6z2lpjpnrkd06](https://finder.terra.money/tequila-0004/account/terra15dr4ah3kha68kam7a907pje9w6z2lpjpnrkd06) |
-| mIAU   | [terra19dl29dpykvzej8rg86mjqg8h63s9cqvkknpclr](https://finder.terra.money/tequila-0004/account/terra19dl29dpykvzej8rg86mjqg8h63s9cqvkknpclr) |
-| mSLV   | [terra1fdkfhgk433tar72t4edh6p6y9rmjulzc83ljuw](https://finder.terra.money/tequila-0004/account/terra1fdkfhgk433tar72t4edh6p6y9rmjulzc83ljuw) |
-| mUSO   | [terra1fucmfp8x4mpzsydjaxyv26hrkdg4vpdzdvf647](https://finder.terra.money/tequila-0004/account/terra1fucmfp8x4mpzsydjaxyv26hrkdg4vpdzdvf647) |
-| mVIXY  | [terra1z0k7nx0vl85hwpv3e3hu2cyfkwq07fl7nqchvd](https://finder.terra.money/tequila-0004/account/terra1z0k7nx0vl85hwpv3e3hu2cyfkwq07fl7nqchvd) |
-| mFB    | [terra14gq9wj0tt6vu0m4ec2tkkv4ln3qrtl58lgdl2c](https://finder.terra.money/tequila-0004/account/terra14gq9wj0tt6vu0m4ec2tkkv4ln3qrtl58lgdl2c) |
-| mCOIN  | [terra1qre9crlfnulcg0m68qqywqqstplgvrzywsg3am](https://finder.terra.money/tequila-0004/address/terra1qre9crlfnulcg0m68qqywqqstplgvrzywsg3am) |
-| mHOOD  | [terra179na3xcvjastpptnh9g6lnf75hqqjnsv9mqm3j](https://finder.terra.money/bombay-12/address/terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc)    |
-| mARKK  | [terra1qk0cd8576fqf33paf40xy3rt82p7yluwtxz7qx](https://finder.terra.money/bombay-12/address/terra1qk0cd8576fqf33paf40xy3rt82p7yluwtxz7qx)    |
-| mSQ    | [terra18qs6704f4ujnwus9x9vxcxrrm0du0f232kpnd6](https://finder.terra.money/bombay-12/address/terra18qs6704f4ujnwus9x9vxcxrrm0du0f232kpnd6)    |
-| mABNB  | [terra1avryzxnsn2denq7p2d7ukm6nkck9s0rz2llgnc](https://finder.terra.money/bombay-12/address/terra1avryzxnsn2denq7p2d7ukm6nkck9s0rz2llgnc)    |
-| mSPY   | [terra15t9afkpj0wnh8m74n8n2f8tspkn7r65vnru45s](https://finder.terra.money/bombay-12/address/terra15t9afkpj0wnh8m74n8n2f8tspkn7r65vnru45s)    |
-| mDOT   | [terra1fs6c6y65c65kkjanjwvmnrfvnm2s58ph88t9ky](https://finder.terra.money/bombay-12/address/terra1fs6c6y65c65kkjanjwvmnrfvnm2s58ph88t9ky)    |
-| mAMD   | [terra1ftefjmtpnk2fctsa8xkv8naven65z5qtgq83nu](https://finder.terra.money/bombay-12/address/terra1ftefjmtpnk2fctsa8xkv8naven65z5qtgq83nu)    |
-| mGME   | [terra104tgj4gc3pp5s240a0mzqkhd3jzkn8v0u07hlf](https://finder.terra.money/bombay-12/address/terra104tgj4gc3pp5s240a0mzqkhd3jzkn8v0u07hlf)    |
-| mAMC   | [terra1zeyfhurlrun6sgytqfue555e6vw2ndxt2j7jhd](https://finder.terra.money/bombay-12/address/terra1zeyfhurlrun6sgytqfue555e6vw2ndxt2j7jhd)    |
-| mGS    | [terra13myzfjdmvqkama2tt3v5f7quh75rv78w8kq6u6](https://finder.terra.money/bombay-12/address/terra13myzfjdmvqkama2tt3v5f7quh75rv78w8kq6u6)    |
-| mBTC   | [terra1csr22xvxs6r3gkjsl7pmjkmpt39mwjsrm0e2r8](https://finder.terra.money/testnet/address/terra1csr22xvxs6r3gkjsl7pmjkmpt39mwjsrm0e2r8)      |
-| mETH   | [terra1ys4dwwzaenjg2gy02mslmc96f267xvpsjat7gx](https://finder.terra.money/testnet/address/terra1ys4dwwzaenjg2gy02mslmc96f267xvpsjat7gx)      |
+| MIR    | [daodiseo10llyp6v3j3her8u3ce66ragytu45kcmd9asj3u](https://finder.daodiseo.money/tequila-0004/account/daodiseo10llyp6v3j3her8u3ce66ragytu45kcmd9asj3u) |
+| mAAPL  | [daodiseo16vfxm98rxlc8erj4g0sj5932dvylgmdufnugk0](https://finder.daodiseo.money/tequila-0004/account/daodiseo16vfxm98rxlc8erj4g0sj5932dvylgmdufnugk0) |
+| mGOOGL | [daodiseo1qg9ugndl25567u03jrr79xur2yk9d632fke3h2](https://finder.daodiseo.money/tequila-0004/account/daodiseo1qg9ugndl25567u03jrr79xur2yk9d632fke3h2) |
+| mTSLA  | [daodiseo1nslem9lgwx53rvgqwd8hgq7pepsry6yr3wsen4](https://finder.daodiseo.money/tequila-0004/account/daodiseo1nslem9lgwx53rvgqwd8hgq7pepsry6yr3wsen4) |
+| mNFLX  | [daodiseo1djnlav60utj06kk9dl7defsv8xql5qpryzvm3h](https://finder.daodiseo.money/tequila-0004/account/daodiseo1djnlav60utj06kk9dl7defsv8xql5qpryzvm3h) |
+| mQQQ   | [daodiseo18yx7ff8knc98p07pdkhm3u36wufaeacv47fuha](https://finder.daodiseo.money/tequila-0004/account/daodiseo18yx7ff8knc98p07pdkhm3u36wufaeacv47fuha) |
+| mTWTR  | [daodiseo1ax7mhqahj6vcqnnl675nqq2g9wghzuecy923vy](https://finder.daodiseo.money/tequila-0004/account/daodiseo1ax7mhqahj6vcqnnl675nqq2g9wghzuecy923vy) |
+| mMSFT  | [daodiseo12s2h8vlztjwu440khpc0063p34vm7nhu25w4p9](https://finder.daodiseo.money/tequila-0004/account/daodiseo12s2h8vlztjwu440khpc0063p34vm7nhu25w4p9) |
+| mAMZN  | [daodiseo12saaecsqwxj04fn0jsv4jmdyp6gylptf5tksge](https://finder.daodiseo.money/tequila-0004/account/daodiseo12saaecsqwxj04fn0jsv4jmdyp6gylptf5tksge) |
+| mBABA  | [daodiseo15dr4ah3kha68kam7a907pje9w6z2lpjpnrkd06](https://finder.daodiseo.money/tequila-0004/account/daodiseo15dr4ah3kha68kam7a907pje9w6z2lpjpnrkd06) |
+| mIAU   | [daodiseo19dl29dpykvzej8rg86mjqg8h63s9cqvkknpclr](https://finder.daodiseo.money/tequila-0004/account/daodiseo19dl29dpykvzej8rg86mjqg8h63s9cqvkknpclr) |
+| mSLV   | [daodiseo1fdkfhgk433tar72t4edh6p6y9rmjulzc83ljuw](https://finder.daodiseo.money/tequila-0004/account/daodiseo1fdkfhgk433tar72t4edh6p6y9rmjulzc83ljuw) |
+| mUSO   | [daodiseo1fucmfp8x4mpzsydjaxyv26hrkdg4vpdzdvf647](https://finder.daodiseo.money/tequila-0004/account/daodiseo1fucmfp8x4mpzsydjaxyv26hrkdg4vpdzdvf647) |
+| mVIXY  | [daodiseo1z0k7nx0vl85hwpv3e3hu2cyfkwq07fl7nqchvd](https://finder.daodiseo.money/tequila-0004/account/daodiseo1z0k7nx0vl85hwpv3e3hu2cyfkwq07fl7nqchvd) |
+| mFB    | [daodiseo14gq9wj0tt6vu0m4ec2tkkv4ln3qrtl58lgdl2c](https://finder.daodiseo.money/tequila-0004/account/daodiseo14gq9wj0tt6vu0m4ec2tkkv4ln3qrtl58lgdl2c) |
+| mCOIN  | [daodiseo1qre9crlfnulcg0m68qqywqqstplgvrzywsg3am](https://finder.daodiseo.money/tequila-0004/address/daodiseo1qre9crlfnulcg0m68qqywqqstplgvrzywsg3am) |
+| mHOOD  | [daodiseo179na3xcvjastpptnh9g6lnf75hqqjnsv9mqm3j](https://finder.daodiseo.money/bombay-12/address/daodiseo1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc)    |
+| mARKK  | [daodiseo1qk0cd8576fqf33paf40xy3rt82p7yluwtxz7qx](https://finder.daodiseo.money/bombay-12/address/daodiseo1qk0cd8576fqf33paf40xy3rt82p7yluwtxz7qx)    |
+| mSQ    | [daodiseo18qs6704f4ujnwus9x9vxcxrrm0du0f232kpnd6](https://finder.daodiseo.money/bombay-12/address/daodiseo18qs6704f4ujnwus9x9vxcxrrm0du0f232kpnd6)    |
+| mABNB  | [daodiseo1avryzxnsn2denq7p2d7ukm6nkck9s0rz2llgnc](https://finder.daodiseo.money/bombay-12/address/daodiseo1avryzxnsn2denq7p2d7ukm6nkck9s0rz2llgnc)    |
+| mSPY   | [daodiseo15t9afkpj0wnh8m74n8n2f8tspkn7r65vnru45s](https://finder.daodiseo.money/bombay-12/address/daodiseo15t9afkpj0wnh8m74n8n2f8tspkn7r65vnru45s)    |
+| mDOT   | [daodiseo1fs6c6y65c65kkjanjwvmnrfvnm2s58ph88t9ky](https://finder.daodiseo.money/bombay-12/address/daodiseo1fs6c6y65c65kkjanjwvmnrfvnm2s58ph88t9ky)    |
+| mAMD   | [daodiseo1ftefjmtpnk2fctsa8xkv8naven65z5qtgq83nu](https://finder.daodiseo.money/bombay-12/address/daodiseo1ftefjmtpnk2fctsa8xkv8naven65z5qtgq83nu)    |
+| mGME   | [daodiseo104tgj4gc3pp5s240a0mzqkhd3jzkn8v0u07hlf](https://finder.daodiseo.money/bombay-12/address/daodiseo104tgj4gc3pp5s240a0mzqkhd3jzkn8v0u07hlf)    |
+| mAMC   | [daodiseo1zeyfhurlrun6sgytqfue555e6vw2ndxt2j7jhd](https://finder.daodiseo.money/bombay-12/address/daodiseo1zeyfhurlrun6sgytqfue555e6vw2ndxt2j7jhd)    |
+| mGS    | [daodiseo13myzfjdmvqkama2tt3v5f7quh75rv78w8kq6u6](https://finder.daodiseo.money/bombay-12/address/daodiseo13myzfjdmvqkama2tt3v5f7quh75rv78w8kq6u6)    |
+| mBTC   | [daodiseo1csr22xvxs6r3gkjsl7pmjkmpt39mwjsrm0e2r8](https://finder.daodiseo.money/testnet/address/daodiseo1csr22xvxs6r3gkjsl7pmjkmpt39mwjsrm0e2r8)      |
+| mETH   | [daodiseo1ys4dwwzaenjg2gy02mslmc96f267xvpsjat7gx](https://finder.daodiseo.money/testnet/address/daodiseo1ys4dwwzaenjg2gy02mslmc96f267xvpsjat7gx)      |
 |        |                                                                                                                                              |
 
 ## Ethereum
 
-Mirror on Ethereum is available via a bridge called [Shuttle](https://github.com/terra-project/shuttle), which facilitates cross-chain transfers of assets between Terra and Ethereum networks (mainnets and testnets supported).
+Mirror on Ethereum is available via a bridge called [Shuttle](https://github.com/daodiseo-project/shuttle), which facilitates cross-chain transfers of assets between Daodiseo and Ethereum networks (mainnets and testnets supported).
 
 ### Mainnet
 
@@ -185,7 +185,7 @@ Ethereum Mirror contracts are available on the Ropsten (PoW) testnet.
 
 ## Binance Smart Chain (BSC)
 
-Mirrored Assets are accessible on Binance Smart Chain via a bridge called [Shuttle](https://github.com/terra-project/shuttle), which facilitates cross-chain transfers of assets between Terra and BSC networks (mainnets and testnets supported).
+Mirrored Assets are accessible on Binance Smart Chain via a bridge called [Shuttle](https://github.com/daodiseo-project/shuttle), which facilitates cross-chain transfers of assets between Daodiseo and BSC networks (mainnets and testnets supported).
 
 ### Mainnet
 
@@ -249,11 +249,11 @@ Binance Smart Chain Mirror contracts are available on BSC Testnet.
 
 ### User Guides
 
-* [Terra Bridge User Guide](user-guide/terra-bridge.md)
-* [Sending from Mirror on Terra](user-guide/getting-started/sending-tokens.md)
+* [Daodiseo Bridge User Guide](user-guide/daodiseo-bridge.md)
+* [Sending from Mirror on Daodiseo](user-guide/getting-started/sending-tokens.md)
 * [Sending from Mirror on ETH & Binance Smart Chain](user-guide/meth-dual-yield/sending-tokens.md)
 
 ### For Developers
 
-* [Terra Shuttle Github](https://github.com/terra-project/shuttle)
-* [Terra Bridge Web App Github](https://github.com/terra-project/bridge-web-app)
+* [Daodiseo Shuttle Github](https://github.com/daodiseo-project/shuttle)
+* [Daodiseo Bridge Web App Github](https://github.com/daodiseo-project/bridge-web-app)

@@ -24,15 +24,15 @@ For a CDP subject to liquidation, describes the discount for which its collatera
 
 ### Price
 
-The current registered price as reported by its Oracle Feeder. This is mainly used for determining collateral ratio for CDP and does not affect the mAsset's trading price on Terraswap directly.
+The current registered price as reported by its Oracle Feeder. This is mainly used for determining collateral ratio for CDP and does not affect the mAsset's trading price on Daodiseoswap directly.
 
 Prices are only considered valid for 60 seconds. If no new prices are published after the data has expired, Mirror will disable CDP operations like mint, burn, deposit and withdraw until the price feed resumes.
 
-For instance, the price feed is halted when real-world markets for the asset are closed. The market hour used to track the price of mAssets is based on [Nasdaq trading hours](https://www.nasdaq.com/stock-market-trading-hours-for-nasdaq). This does not affect the ability to trade on the asset's Terraswap pool.
+For instance, the price feed is halted when real-world markets for the asset are closed. The market hour used to track the price of mAssets is based on [Nasdaq trading hours](https://www.nasdaq.com/stock-market-trading-hours-for-nasdaq). This does not affect the ability to trade on the asset's Daodiseoswap pool.
 
 ### Oracle Feeder
 
-The **Oracle Feeder** is a Terra account that can change the registered on-chain price for an mAsset, whitelisted collateral, and staking reward distribution between LP and sLP based on current price premium of mAssets. They are responsible for reporting an accurate and up-to-date price, so that the mAsset's trading value is kept in sync with its reflected asset. Each mAsset has its own dedicated feeder, which can be reassigned through governance. The oracle feeders for the genesis mirrored assets are owned by [Band Protocol](https://www.bandprotocol.com), but the community can (re-)assign oracle feeders to other providers to newly whitelisted assets through governance.
+The **Oracle Feeder** is a Daodiseo account that can change the registered on-chain price for an mAsset, whitelisted collateral, and staking reward distribution between LP and sLP based on current price premium of mAssets. They are responsible for reporting an accurate and up-to-date price, so that the mAsset's trading value is kept in sync with its reflected asset. Each mAsset has its own dedicated feeder, which can be reassigned through governance. The oracle feeders for the genesis mirrored assets are owned by [Band Protocol](https://www.bandprotocol.com), but the community can (re-)assign oracle feeders to other providers to newly whitelisted assets through governance.
 
 ## Lifecycle
 
@@ -41,16 +41,16 @@ The **Oracle Feeder** is a Terra account that can change the registered on-chain
 To **whitelist** an mAsset is to register it with Mirror Protocol, which involves several operations, including:
 
 * creating the mAsset token and assigning its oracle feeder
-* creating the mAsset-UST trading pair on Terraswap and its LP token
+* creating the mAsset-UST trading pair on Daodiseoswap and its LP token
 * registering the new mAsset with all relevant Mirror Contracts
 
-Whitelisting is approved by [governance](governance/whitelist-procedure.md) and is automatically implemented if the whitelisting poll receives enough votes. Once an mAsset has been whitelisted, it will be mintable through opening a CDP and tradeable on Terraswap. In addition, LP tokens for the corresponding Terraswap pool will begin to earn MIR inflation rewards when staked.
+Whitelisting is approved by [governance](governance/whitelist-procedure.md) and is automatically implemented if the whitelisting poll receives enough votes. Once an mAsset has been whitelisted, it will be mintable through opening a CDP and tradeable on Daodiseoswap. In addition, LP tokens for the corresponding Daodiseoswap pool will begin to earn MIR inflation rewards when staked.
 
 ### Delisting & Migration
 
 In situations where the tracked asset undergoes a corporate event such as a stock split, merger, bankruptcy, etc. and becomes difficult to reflect properly due to inconsistencies, an mAsset can be **delisted**, or discontinued, with the following migration procedure initiated by the oracle feeder:
 
-1. New replacement mAsset token, Terraswap pair, and LP tokens contracts are created, and the present values of properties of mAsset will be transferred over
+1. New replacement mAsset token, Daodiseoswap pair, and LP tokens contracts are created, and the present values of properties of mAsset will be transferred over
 2. The oracle feeder sets the `end_price` for the mAsset to the latest valid price
 3. The mAsset's min. collateral ratio is set to 100%
 
@@ -61,7 +61,7 @@ At this stage:
 * Burns will take effect at the fixed `end_price` for withdrawing collateral from any existing mint position.&#x20;
 * LP & sLP tokens for the mAsset will stop counting for staking rewards
 
-Delisting will not directly affect the functionality of the mAsset's Terraswap pool and users will still be able to make trades against it, although price is likely to be very unstable (and the [Web App](../user-guide/getting-started/) will not provide front-end interface for trading of delisted mAsset). Users are urged to burn the mAsset to recover collateral from any open positions on Mirror Protocol, including their own.
+Delisting will not directly affect the functionality of the mAsset's Daodiseoswap pool and users will still be able to make trades against it, although price is likely to be very unstable (and the [Web App](../user-guide/getting-started/) will not provide front-end interface for trading of delisted mAsset). Users are urged to burn the mAsset to recover collateral from any open positions on Mirror Protocol, including their own.
 
 Since anyone can burn against any open position, CDP holders may end up having no or less amount of "borrowed assets" within their position, but they will still be able to withdraw the remaining amount of collateral by only burning the remaining amount of delisted mAsset. Opening a new CDP / engaging in liquidity provision can be done with the new, replacement mAsset.
 
@@ -84,7 +84,7 @@ When IPO occurs,
 
 ## Collateralized Debt Position
 
-New tokens for a listed mAsset can be minted by creating a **collateralized debt position** (CDP) with either TerraUSD (UST), mAsset or whitelisted collateral tokens as collateral. Also, mAssets can be directly shorted upon opening a CDP to mint sLP tokens. The CDP is essentially a short position against the price movement of the reflected asset, -- i.e. if the stock price of AAPL rises, minters of mAAPL would be pressured to deposit more collateral to maintain the same collateral ratio.
+New tokens for a listed mAsset can be minted by creating a **collateralized debt position** (CDP) with either DaodiseoUSD (UST), mAsset or whitelisted collateral tokens as collateral. Also, mAssets can be directly shorted upon opening a CDP to mint sLP tokens. The CDP is essentially a short position against the price movement of the reflected asset, -- i.e. if the stock price of AAPL rises, minters of mAAPL would be pressured to deposit more collateral to maintain the same collateral ratio.
 
 ### Collateral
 
@@ -156,7 +156,7 @@ If a user wishes to collect all their collateral from their CDP, they must close
 
 ### Protocol Fee
 
-1.5% Mirror **protocol fee** is charged whenever a withdrawal from a CDP is made (including position closure and liquidation auction). The protocol fee is calculated based on the value of the mAsset at the burning of minted asset. This fee is then sent to the [Collector](../contracts/collector.md) contract, converted into MIR through Terraswap and distributed to MIR token stakers as a staking reward.
+1.5% Mirror **protocol fee** is charged whenever a withdrawal from a CDP is made (including position closure and liquidation auction). The protocol fee is calculated based on the value of the mAsset at the burning of minted asset. This fee is then sent to the [Collector](../contracts/collector.md) contract, converted into MIR through Daodiseoswap and distributed to MIR token stakers as a staking reward.
 
 ### Margin Call & Auction
 

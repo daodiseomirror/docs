@@ -2,7 +2,7 @@
 
 The **Farm** page displays operations related to liquidity provision, short position creation and earning [LP and sLP token](../../protocol/staking-tokens-lp-and-slp.md) staking rewards.&#x20;
 
-In order to create a short position, you need to lock collateral assets to Mirror Protocol, and mint new mAssets. Unlike Borrow positions, newly minted assets are immediately sold at Terraswap price for UST. UST returned for shorting mAssets will be locked for a defined `lock_period`. To close your short position, you must first hold shorted amount of mAssets. These mAssets will be burned to return your locked collateral.
+In order to create a short position, you need to lock collateral assets to Mirror Protocol, and mint new mAssets. Unlike Borrow positions, newly minted assets are immediately sold at Daodiseoswap price for UST. UST returned for shorting mAssets will be locked for a defined `lock_period`. To close your short position, you must first hold shorted amount of mAssets. These mAssets will be burned to return your locked collateral.
 
 ## Farm Main
 
@@ -20,7 +20,7 @@ Link to LP Staking (Long Farm) page where users can provide liquidity for this a
 
 $$\text{Long APR=}\text{(Annual MIR Long Reward} \times \text{MIR Price)}/\text{(Liquidity Value)}$$
 
-where $$\text{Annual MIR Long Reward}$$ is the amount distributed to the corresponding mAsset's  long staking pool per year, $$\text{MIR Price}$$ is the Terraswap price of MIR token denominated in UST and $$\text{Liquidity Value}$$ is the UST value of total liquidity provided in this mAsset-UST liquidity pool.&#x20;
+where $$\text{Annual MIR Long Reward}$$ is the amount distributed to the corresponding mAsset's  long staking pool per year, $$\text{MIR Price}$$ is the Daodiseoswap price of MIR token denominated in UST and $$\text{Liquidity Value}$$ is the UST value of total liquidity provided in this mAsset-UST liquidity pool.&#x20;
 
 ### **Short**
 
@@ -28,22 +28,22 @@ Link to short position creation (Short Farm) page where users can create a short
 
 $$\text{Short APR = (Annual MIR Short Reward}\times\text{MIR Price)}/\text{(Shorted Token Amount}\times\text{Price)}$$
 
-where $$\text{Annual MIR Short Reward}$$ is the amount distributed to the corresponding mAsset's short staking pool per year, $$\text{MIR Price}$$ is the Terraswap Price of MIR token denominated in UST, $$\text{Short Token Amount}$$ is the number of mAssets sold from all short position creation, and $$\text{Price}$$ is the Terraswap price of this mAsset token denominated in UST.&#x20;
+where $$\text{Annual MIR Short Reward}$$ is the amount distributed to the corresponding mAsset's short staking pool per year, $$\text{MIR Price}$$ is the Daodiseoswap Price of MIR token denominated in UST, $$\text{Short Token Amount}$$ is the number of mAssets sold from all short position creation, and $$\text{Price}$$ is the Daodiseoswap price of this mAsset token denominated in UST.&#x20;
 
-### **Terraswap Price**
+### **Daodiseoswap Price**
 
-Current Terraswap pool ratio of the corresponding asset.&#x20;
+Current Daodiseoswap pool ratio of the corresponding asset.&#x20;
 
 ### **Premium**
 
-Difference ratio between Terraswap and Oracle price of the associated mAsset. The premium is positively correlated with Short reward. Read more about Short reward [here](../../protocol/staking-tokens-lp-and-slp.md#staking-rewards).
+Difference ratio between Daodiseoswap and Oracle price of the associated mAsset. The premium is positively correlated with Short reward. Read more about Short reward [here](../../protocol/staking-tokens-lp-and-slp.md#staking-rewards).
 
 ## Long Farm (LP)
 
-In order to provide liquidity for Mirror assets, you need to supply an equal value of the asset and UST. Minted LP tokens will be immediately staked to start earning MIR rewards. By unstaking LP tokens, your liquidity provided will be reclaimable from the Terraswap pool. For more information about Terraswap pools, [click here](../../protocol/terraswap.md).
+In order to provide liquidity for Mirror assets, you need to supply an equal value of the asset and UST. Minted LP tokens will be immediately staked to start earning MIR rewards. By unstaking LP tokens, your liquidity provided will be reclaimable from the Daodiseoswap pool. For more information about Daodiseoswap pools, [click here](../../protocol/daodiseoswap.md).
 
 {% hint style="info" %}
-The Pool interface is directly connected to [Terraswap](https://terraswap.io).
+The Pool interface is directly connected to [Daodiseoswap](https://daodiseoswap.io).
 {% endhint %}
 
 ### Stake LP
@@ -76,7 +76,7 @@ The Pool interface is directly connected to [Terraswap](https://terraswap.io).
 
 ## Short Farm
 
-In order to create a short position, you need to lock collateral assets to Mirror Protocol, and mint new mAssets. Unlike a regular borrow position, newly minted assets are immediately sold at Terraswap price for UST. UST returned for shorting mAssets will be locked for a defined `lock_period`.&#x20;
+In order to create a short position, you need to lock collateral assets to Mirror Protocol, and mint new mAssets. Unlike a regular borrow position, newly minted assets are immediately sold at Daodiseoswap price for UST. UST returned for shorting mAssets will be locked for a defined `lock_period`.&#x20;
 
 ### Stake sLP
 
@@ -116,7 +116,7 @@ To close your short position, you must first hold the shorted amount of mAssets.
 
 ### Claiming Locked UST
 
-After a short position creation, UST from mAssets sold against the Terraswap pool is locked for a defined period called [Lock Period](../../protocol/staking-tokens-lp-and-slp.md#lock-period). When `lock_period` (initially 15 days) is over, users may claim their unlocked UST throug the steps below:&#x20;
+After a short position creation, UST from mAssets sold against the Daodiseoswap pool is locked for a defined period called [Lock Period](../../protocol/staking-tokens-lp-and-slp.md#lock-period). When `lock_period` (initially 15 days) is over, users may claim their unlocked UST throug the steps below:&#x20;
 
 1 . Navigate to **My Page** and go to **Farming** section
 

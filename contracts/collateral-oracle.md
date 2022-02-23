@@ -2,7 +2,7 @@
 
 Collateral Oracle contract manages a directory of whitelisted collateral assets, providing the necessary interfaces to register and revoke assets. Mint contract will fetch prices from collateral oracle to determine the C-ratio of each CDP. \
 \
-The Collateral Oracle  fetches prices from different sources on the Terra ecosystem,  acting as a proxy for Mint Contract.
+The Collateral Oracle  fetches prices from different sources on the Daodiseo ecosystem,  acting as a proxy for Mint Contract.
 
 ## InitMsg
 
@@ -26,7 +26,7 @@ pub struct InitMsg {
 | --------------- | --------- | --------------------------------------------------------------- |
 | `owner`         | HumanAddr | Address of owner                                                |
 | `mint_contract` | HumanAddr | Address of Mirror Mint contract                                 |
-| `base_denom`    | String    | Asset in which prices will be denominated in (default TerraUSD) |
+| `base_denom`    | String    | Asset in which prices will be denominated in (default DaodiseoUSD) |
 | `mirror_oracle` | HumanAddr | Address of MIR token oracle feeder                              |
 | `anchor_oracle` | HumanAddr | Address of ANC token oracle feeder                              |
 | `band_oracle`   | HumanAddr | Address of Band Protocol oracle feeder                          |
@@ -59,12 +59,12 @@ pub enum HandleMsg {
 ```javascript
 {
     "update_config": {
-        "owner": "terra1...",
-        "mint_contract": "terra1...",
+        "owner": "daodiseo1...",
+        "mint_contract": "daodiseo1...",
         "base_denom": "uusd",
-        "mirror_oracle": "terra1...",
-        "anchor_oracle": "terra1...",
-        "band_oracle": "terra1..."
+        "mirror_oracle": "daodiseo1...",
+        "anchor_oracle": "daodiseo1...",
+        "band_oracle": "daodiseo1..."
     }
 }
 ```
@@ -75,7 +75,7 @@ pub enum HandleMsg {
 | ----------------- | --------- | --------------------------------------------------------------- |
 | `owner`\*         | HumanAddr | Address of owner                                                |
 | `mint_contract`\* | HumanAddr | Address of Mirror Mint contract                                 |
-| `base_denom`\*    | String    | Asset in which prices will be denominated in (default TerraUSD) |
+| `base_denom`\*    | String    | Asset in which prices will be denominated in (default DaodiseoUSD) |
 | `mirror_oracle`\* | HumanAddr | Address of MIR token oracle feeder                              |
 | `anchor_oracle`\* | HumanAddr | Address of ANC token oracle feeder                              |
 | `band_oracle`\*   | HumanAddr | Address of Band Protocol oracle feeder                          |
@@ -107,12 +107,12 @@ pub enum HandleMsg {
      "register_collateral_asset": {
          "asset": {
              "token": {
-                 "contract_addr": "terra1..."
+                 "contract_addr": "daodiseo1..."
              }
          },
          "price_source": {
-             "terra_oracle": {
-                 "terra_oracle_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
+             "daodiseo_oracle": {
+                 "daodiseo_oracle_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
              },
              "band_oracle": {
                  "band_oracle_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
@@ -120,8 +120,8 @@ pub enum HandleMsg {
              "fixed_price": {
                  "price": "123.123456"
              },
-             "terraswap": {
-                 "terraswap_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9",
+             "daodiseoswap": {
+                 "daodiseoswap_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9",
                  "intermediate_denom": "uluna"
              },
              "anchor_market": {
@@ -150,8 +150,8 @@ pub enum HandleMsg {
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
 pub enum SourceType {
-    TerraOracle {
-        terra_oracle_query: Binary,
+    DaodiseoOracle {
+        daodiseo_oracle_query: Binary,
     },
     BandOracle {
         band_oracle_query: Binary,
@@ -159,8 +159,8 @@ pub enum SourceType {
     FixedPrice {
         price: Decimal,
     },
-    Terraswap {
-        terraswap_query: Binary,
+    Daodiseoswap {
+        daodiseoswap_query: Binary,
         intermediate_denom: Option<String>,
     },
     AnchorMarket {
@@ -174,13 +174,13 @@ pub enum SourceType {
 
 | Key                    | Type    | Description                                                                                    |
 | ---------------------- | ------- | ---------------------------------------------------------------------------------------------- |
-| `terra_oracle_query`   | Binary  | Queries information of Terra's oracle                                                          |
+| `daodiseo_oracle_query`   | Binary  | Queries information of Daodiseo's oracle                                                          |
 | `band_oracle_query`    | Binary  | Queries information of Band Protocol oracle                                                    |
 | `price`                | Decimal | Fixed price to be used for the collateral type (aUST = 1 UST)                                  |
-| `terraswap_query`      | Binary  | Queries information of Terraswap Pair                                                          |
+| `daodiseoswap_query`      | Binary  | Queries information of Daodiseoswap Pair                                                          |
 | `intermediate_denom`\* | String  | Used to calculate UST denominated price of an asset when the asset does not have UST pair pool |
 | `anchor_market_query`  | Binary  | Query to fetch information for Anchor Protocol's asset information (ANC)                       |
-| `native_denom`         | String  | String denomination of the Terra native asset (uusd)                                           |
+| `native_denom`         | String  | String denomination of the Daodiseo native asset (uusd)                                           |
 
 ### `RevokeCollateralAsset`
 
@@ -205,7 +205,7 @@ pub enum HandleMsg {
     "revoke_collateral_asset": {
         "asset": {
             "token": {
-                "contract_addr": "terra1..."
+                "contract_addr": "daodiseo1..."
             }
         }
     }
@@ -242,12 +242,12 @@ pub enum HandleMsg {
     "update_collateral_query": {
         "asset": {
             "token": {
-                "contract_addr": "terra1..."
+                "contract_addr": "daodiseo1..."
             }
         },
          "price_source": {
-             "terra_oracle": {
-                 "terra_oracle_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
+             "daodiseo_oracle": {
+                 "daodiseo_oracle_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
              },
              "band_oracle": {
                  "band_oracle_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
@@ -255,8 +255,8 @@ pub enum HandleMsg {
              "fixed_price": {
                  "price": "123.123456"
              },
-             "terraswap": {
-                 "terraswap_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9",
+             "daodiseoswap": {
+                 "daodiseoswap_query": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9",
                  "intermediate_denom": "uluna"
              },
              "anchor_market": {
@@ -301,7 +301,7 @@ pub enum HandleMsg {
     "update_collateral_premium": {
         "asset": {
             "token": {
-                "contract_addr": "terra1..."
+                "contract_addr": "daodiseo1..."
             }
         },
         "multiplier": "2.00"
@@ -350,7 +350,7 @@ pub struct ConfigResponse {
 | --------------- | --------- | --------------------------------------------------------------- |
 | `owner`         | HumanAddr | Address of owner                                                |
 | `mint_contract` | HumanAddr | Address of Mirror Mint contract                                 |
-| `base_denom`    | String    | Asset in which prices will be denominated in (default TerraUSD) |
+| `base_denom`    | String    | Asset in which prices will be denominated in (default DaodiseoUSD) |
 | `mirror_oracle` | HumanAddr | Address of MIR token oracle feeder                              |
 | `anchor_oracle` | HumanAddr | Address of ANC token oracle feeder                              |
 | `band_oracle`   | HumanAddr | Address of Band Protocol oracle feeder                          |
@@ -368,12 +368,12 @@ pub struct ConfigResponse {
 ```rust
 {
     "config_response": {
-        "owner": "terra1...",
-        "mint_contract": "terra1...",
+        "owner": "daodiseo1...",
+        "mint_contract": "daodiseo1...",
         "base_denom": "uusd",
-        "mirror_oracle": "terra1...",
-        "anchor_oracle": "terra1...",
-        "band_oracle": "terra1..."
+        "mirror_oracle": "daodiseo1...",
+        "anchor_oracle": "daodiseo1...",
+        "band_oracle": "daodiseo1..."
     }
 }
 ```
@@ -382,7 +382,7 @@ pub struct ConfigResponse {
 | --------------- | --------- | --------------------------------------------------------------- |
 | `owner`         | HumanAddr | Address of owner                                                |
 | `mint_contract` | HumanAddr | Address of Mirror Mint contract                                 |
-| `base_denom`    | String    | Asset in which prices will be denominated in (default TerraUSD) |
+| `base_denom`    | String    | Asset in which prices will be denominated in (default DaodiseoUSD) |
 | `mirror_oracle` | HumanAddr | Address of MIR token oracle feeder                              |
 | `anchor_oracle` | HumanAddr | Address of ANC token oracle feeder                              |
 | `band_oracle`   | HumanAddr | Address of Band Protocol oracle feeder                          |

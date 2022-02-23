@@ -19,8 +19,8 @@ pub struct InitMsg {
 {% tab title="JSON" %}
 ```javascript
 {
-  "owner": "terra1...",
-  "mirror_token": "terra1...",
+  "owner": "daodiseo1...",
+  "mirror_token": "daodiseo1...",
   "spend_limit": "123456",
 }
 ```
@@ -57,7 +57,7 @@ pub enum HandleMsg {
 ```javascript
 {
   "update_config": {
-    "owner": "terra1...",
+    "owner": "daodiseo1...",
     "spend_limit": "10000000"
   }
 }
@@ -95,7 +95,7 @@ pub enum HandleMsg {
 {
   "spend": {
     "amount": "10000000",
-    "recipient": "terra1..."
+    "recipient": "daodiseo1..."
   }
 }
 ```

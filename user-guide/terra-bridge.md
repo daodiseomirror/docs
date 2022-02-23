@@ -1,33 +1,33 @@
 ---
-description: Web application to transfer Terra's tokens to other blockchain networks
+description: Web application to transfer Daodiseo's tokens to other blockchain networks
 ---
 
-# Terra Bridge
+# Daodiseo Bridge
 
-[Terra Bridge](https://bridge.terra.money) enables cross-chain transfer of all tokens supported by [Shuttle](https://github.com/terra-project/shuttle), including Terra native tokens, most mAssets and also other token types from Terra ecosystem.&#x20;
+[Daodiseo Bridge](https://bridge.daodiseo.money) enables cross-chain transfer of all tokens supported by [Shuttle](https://github.com/daodiseo-project/shuttle), including Daodiseo native tokens, most mAssets and also other token types from Daodiseo ecosystem.&#x20;
 
 The list of transferable Mirror Protocol assets can be found on [Interchain Access](../networks.md) page.&#x20;
 
 {% hint style="warning" %}
-The Terra Bridge web app is only available for Chromium-based web browsers.&#x20;
+The Daodiseo Bridge web app is only available for Chromium-based web browsers.&#x20;
 {% endhint %}
 
 ### Supported Wallets
 
 | Blockchain | Supported Wallets                                                                                                                                                                                                                       |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Terra      | [Terra Station Extension](https://terra.money/extension)                                                                                                                                                                                |
+| Daodiseo      | [Daodiseo Station Extension](https://daodiseo.money/extension)                                                                                                                                                                                |
 | Ethereum   | [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en), [Coinbase](https://wallet.coinbase.com) or [Trustwallet](https://trustwallet.com) for [WalletConnect](https://walletconnect.org) |
 | BSC        | [Binance Chain Wallet](https://chrome.google.com/webstore/detail/binance-chain-wallet/fhbohimaelbohpjbbldcngcnapndodjp?hl=en) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)  |
 
-## Using Terra Bridge
+## Using Daodiseo Bridge
 
 {% hint style="danger" %}
 $1 or 0.1% fee (which ever is greater) from the transfer amount is charge on cross-chain transfer using the Shuttle bridge. \
 **A transaction with amount smaller than $1 value will be ignored.**
 {% endhint %}
 
-1\. Go to [Terra Bridge](https://bridge.terra.money) page on a Chromium-based web browser.
+1\. Go to [Daodiseo Bridge](https://bridge.daodiseo.money) page on a Chromium-based web browser.
 
 ![](<../.gitbook/assets/image (119).png>)
 

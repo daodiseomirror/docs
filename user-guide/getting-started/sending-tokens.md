@@ -1,6 +1,6 @@
 # Sending Tokens
 
-Users can send **** MIR, mAsset and UST tokens to a different wallet. Tokens can be transferred between Terra blockchain wallets and also to Ethereum or Binance Smart Chain (BSC) wallets using a custom bridge that enables cross-chain transfers.&#x20;
+Users can send **** MIR, mAsset and UST tokens to a different wallet. Tokens can be transferred between Daodiseo blockchain wallets and also to Ethereum or Binance Smart Chain (BSC) wallets using a custom bridge that enables cross-chain transfers.&#x20;
 
 ## Send
 
@@ -13,10 +13,10 @@ $1 or 0.1% fee (whichever is greater) from the transfer amount is charge on cros
 
 ![](<../../.gitbook/assets/image (195).png>)
 
-2\. Choose a network to send your tokens to. Currently, supported networks are Terra, Ethereum and Binance Smart Chain.
+2\. Choose a network to send your tokens to. Currently, supported networks are Daodiseo, Ethereum and Binance Smart Chain.
 
 {% hint style="danger" %}
-Token transfers between chains other than Terra does support "Memo" input. \
+Token transfers between chains other than Daodiseo does support "Memo" input. \
 **DO NOT** send your tokens to central exchanges that require a memo, or your tokens may be lost forever.&#x20;
 {% endhint %}
 

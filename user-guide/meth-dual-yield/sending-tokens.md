@@ -11,11 +11,11 @@ $1 or 0.1% fee (which ever is greater) from the transfer amount is charge on cro
 
 ### From Ethereum
 
-From My Page of mETH, user can navigate to Send page and transfer ERC-20 Mirror tokens to other Ethereum or Terra addresses.&#x20;
+From My Page of mETH, user can navigate to Send page and transfer ERC-20 Mirror tokens to other Ethereum or Daodiseo addresses.&#x20;
 
 ![](<../../.gitbook/assets/image (103).png>)
 
-Tokens transferred from mETH to Terra are converted back to CW-20 and can be used on Mirror Web App.&#x20;
+Tokens transferred from mETH to Daodiseo are converted back to CW-20 and can be used on Mirror Web App.&#x20;
 
 ![](<../../.gitbook/assets/image (92).png>)
 
@@ -23,9 +23,9 @@ Once the user enters the recipient's address, the app will automatically determi
 \
 To learn how to buy or get LP tokens to use on mETH, please refer to [Uniswap docs](https://uniswap.org/docs/v2/).&#x20;
 
-### From Binance Smart Chain (BSC) to Terra
+### From Binance Smart Chain (BSC) to Daodiseo
 
-Mirror Protocol assets are supported on Binance Smart Chain (BSC). A simple user interface is provided to enable cross-chain transfer to Terra blockchain at [https://bsc.mirror.finance/my](https://bsc.mirror.finance/my).
+Mirror Protocol assets are supported on Binance Smart Chain (BSC). A simple user interface is provided to enable cross-chain transfer to Daodiseo blockchain at [https://bsc.mirror.finance/my](https://bsc.mirror.finance/my).
 
 ![](<../../.gitbook/assets/image (111).png>)
 
@@ -39,4 +39,4 @@ By clicking the `Send` button which pops up after clicking on Actions, user is d
 
 ![](<../../.gitbook/assets/image (104).png>)
 
-After entering a Terra address to send tokens to, and the amount, `SEND` button is activated. Once, `SEND` is pressed, the connected wallet will prompt you to confirm and sign the transaction.&#x20;
+After entering a Daodiseo address to send tokens to, and the amount, `SEND` button is activated. Once, `SEND` is pressed, the connected wallet will prompt you to confirm and sign the transaction.&#x20;

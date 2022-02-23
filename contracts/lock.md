@@ -18,7 +18,7 @@ pub struct InitMsg {
 | --------------- | --------- | ------------------------------------------------------------------------ |
 | `owner`         | HumanAddr | Owner address of Mirror Lock                                             |
 | `mint_contract` | HumanAddr | Address of Mirror Mint                                                   |
-| `base_denom`    | String    | Native token denomination for stablecoin (TerraUSD)                      |
+| `base_denom`    | String    | Native token denomination for stablecoin (DaodiseoUSD)                      |
 | `lockup_period` | u64       | Length of time in seconds which the UST from shorting will be locked for |
 
 ## HandleMsg
@@ -46,8 +46,8 @@ pub enum HandleMsg {
 ```javascript
 {
     "update_config": {
-        "owner": "terra1...",
-        "mint_contract": "terra1...",
+        "owner": "daodiseo1...",
+        "mint_contract": "daodiseo1...",
         "base_denom": "uusd",
         "lockup_period": 8
     }
@@ -60,7 +60,7 @@ pub enum HandleMsg {
 | ----------------- | --------- | ------------------------------------------------------------------------- |
 | `owner`\*         | HumanAddr | Owner address of Mirror Lock                                              |
 | `mint_contract`\* | HumanAddr | Address of Mirror Mint                                                    |
-| `base_denom`\*    | String    | Native token denomination for stablecoin (TerraUSD)                       |
+| `base_denom`\*    | String    | Native token denomination for stablecoin (DaodiseoUSD)                       |
 | `lockup_period`\* | u64       | Length of time in seconds which the UST from shorting witll be locked for |
 
 \*= optional
@@ -87,7 +87,7 @@ pub enum HandleMsg {
 {
     "lock_position_funds_hook": {
         "position_idx": "10",
-        "receiver": "terra1..."
+        "receiver": "daodiseo1..."
     }
 }
 ```
@@ -192,7 +192,7 @@ pub struct ConfigResponse {
 | --------------- | --------- | ------------------------------------------------------------------------ |
 | `owner`         | HumanAddr | Owner address of Mirror Lock                                             |
 | `mint_contract` | HumanAddr | Address of Mirror Mint                                                   |
-| `base_denom`    | String    | Native token denomination for stablecoin (TerraUSD)                      |
+| `base_denom`    | String    | Native token denomination for stablecoin (DaodiseoUSD)                      |
 | `lockup_period` | u64       | Length of time in seconds which the UST from shorting will be locked for |
 {% endtab %}
 
@@ -210,8 +210,8 @@ pub struct ConfigResponse {
 ```javascript
 {
     "config_response": {
-        "owner": "terra1...",
-        "mint_contract": "terra1...",
+        "owner": "daodiseo1...",
+        "mint_contract": "daodiseo1...",
         "base_denom": "uusd",
         "lockup_period": 10
     }
@@ -222,7 +222,7 @@ pub struct ConfigResponse {
 | --------------- | --------- | --------------------------------------------------------------- |
 | `owner`         | HumanAddr | Owner address of Mirror Lock                                    |
 | `mint_contract` | HumanAddr | Address of Mirror Mint                                          |
-| `base_denom`    | String    | Native token denomination for stablecoin (TerraUSD)             |
+| `base_denom`    | String    | Native token denomination for stablecoin (DaodiseoUSD)             |
 | `lockup_period` | u64       | Number of blocks which the UST from shorting will be locked for |
 {% endtab %}
 {% endtabs %}
@@ -285,7 +285,7 @@ pub struct PositionLockInfoResponse {
 {
     "position_lock_info_response": {
         "idx": "10",
-        "receiver": "terra1...",
+        "receiver": "daodiseo1...",
         "locked_funds": [
             [100, "1400"]
         ]

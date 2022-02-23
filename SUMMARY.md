@@ -11,7 +11,7 @@
 * [Overview](protocol/synopsis.md)
 * [Mirrored Assets (mAssets)](protocol/mirrored-assets-massets.md)
 * [Mirror Token (MIR)](protocol/mirror-token-mir.md)
-* [Terraswap](protocol/terraswap.md)
+* [Daodiseoswap](protocol/daodiseoswap.md)
 * [Staking Tokens (LP & sLP)](protocol/staking-tokens-lp-and-slp.md)
 * [Governance](protocol/governance/README.md)
   * [Proposal Types](protocol/governance/proposal-types.md)
@@ -42,7 +42,7 @@
   * [Sending Tokens](user-guide/meth-dual-yield/sending-tokens.md)
   * [Trade](user-guide/meth-dual-yield/trade.md)
   * [Stake](user-guide/meth-dual-yield/staking\_guide.md)
-* [Terra Bridge](user-guide/terra-bridge.md)
+* [Daodiseo Bridge](user-guide/daodiseo-bridge.md)
 
 ## Smart Contracts <a href="#contracts" id="contracts"></a>
 
@@ -60,7 +60,7 @@
 
 ## External Resources
 
-* [Mirror Protocol GitHub](https://github.com/Mirror-Protocol)
-* [Terraswap App](https://app.terraswap.io)
-* [Terra Blockchain](https://terra.money)
+* [Mirror Protocol GitHub](https://github.com/daodiseomirror)
+* [Daodiseoswap App](https://app.daodiseoswap.io)
+* [Daodiseo Blockchain](https://daodiseo.money)
 * [Mirror Bug Bounty Program](https://immunefi.com/bounty/mirror/)

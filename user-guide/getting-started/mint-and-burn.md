@@ -4,7 +4,7 @@ User can **Borrow** newly minted mAssets by providing any collateral accepted in
 
 When the user withdraws collateral either to manage position's collateral ratio or to close the position, a[ Protocol Fee](../../protocol/mirrored-assets-massets.md#protocol-fee) of 1.5% is charged to the collateral being withdrawn.
 
-Please note that all asset values are calculated based on the reported price from the [oracle feeder ](../../protocol/mirrored-assets-massets.md#oracle-feeder)instead of the Terraswap price.
+Please note that all asset values are calculated based on the reported price from the [oracle feeder ](../../protocol/mirrored-assets-massets.md#oracle-feeder)instead of the Daodiseoswap price.
 
 ## Borrow (Open Position)
 
@@ -60,7 +60,7 @@ If you do not hold an amount greater than or equal to `Burn Amount` displayed on
 
 Users are warned when their CDP is close to liquidation. Borrow / short positions become vulnerable to liquidation when the collateral ratio falls below the `min_collateral_ratio`. Vice versa, borrow / short positions can be over-collateralized when the value of collateral to minted assets increases by a large margin. To avoid liquidation or over-collateralization, the user can borrow more or burn assets, deposit or withdraw collateral or change both amounts of borrowed and collateral.&#x20;
 
-1\. Navigate to [**My** **Page**](https://terra.mirror.finance/my)****
+1\. Navigate to [**My** **Page**](https://daodiseo.mirror.finance/my)****
 
 2\. In the **Borrowings** section, press the "`Manage`"under actions
 

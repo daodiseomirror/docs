@@ -18,7 +18,7 @@ pub struct InitMsg {
     pub collector: HumanAddr,
     pub collateral_oracle: HumanAddr,
     pub staking: HumanAddr,
-    pub terraswap_factory: HumanAddr,
+    pub daodiseoswap_factory: HumanAddr,
     pub lock: HumanAddr,
     pub base_denom: String,
     pub token_code_id: u64,
@@ -30,13 +30,13 @@ pub struct InitMsg {
 {% tab title="JSON" %}
 ```javascript
 {
-  "owner": "terra1...",
-  "oracle": "terra1...",
-  "collector": "terra1...",
-  "collateral_oracle": "terra1...",
-  "staking": "terra1...",
-  "terraswap_factory": "terra1...",
-  "lock": "terra1...",
+  "owner": "daodiseo1...",
+  "oracle": "daodiseo1...",
+  "collector": "daodiseo1...",
+  "collateral_oracle": "daodiseo1...",
+  "staking": "daodiseo1...",
+  "daodiseoswap_factory": "daodiseo1...",
+  "lock": "daodiseo1...",
   "base_denom": "uusd",
   "token_code_id": 8,
   "protocol_fee_rate": "0.123
@@ -52,10 +52,10 @@ pub struct InitMsg {
 | `collector` | HumanAddr | Contract address of [Mirror Collector](collector.md) |
 | `collateral_oracle` | HumanAddr | Contract address of [Mirror Collateral Oracle](collateral-oracle.md) |
 | `staking` | HumanAddr | Contract address of [Mirror Staking](staking.md) |
-| `terraswap_factory` | HumanAddr | Contract address of Terraswap Factory |
+| `daodiseoswap_factory` | HumanAddr | Contract address of Daodiseoswap Factory |
 | `lock` | HumanAddr | Contract address of [Mirror Lock](lock.md) |
-| `base_denom` | String | Native token denomination for stablecoin \(TerraUSD\) |
-| `token_code_id` | u64 | Code ID for Terraswap CW20 Token |
+| `base_denom` | String | Native token denomination for stablecoin \(DaodiseoUSD\) |
+| `token_code_id` | u64 | Code ID for Daodiseoswap CW20 Token |
 | `protocol_fee_rate` | Decimal | Protocol fee |
 
 ## HandleMsg
@@ -84,7 +84,7 @@ pub enum HandleMsg {
 {
   "receive": {
     "amount": "10000000",
-    "sender": "terra1...",
+    "sender": "daodiseo1...",
     "msg": "eyAiZXhlY3V0ZV9tc2ciOiAiYmxhaCBibGFoIiB9"
   }
 }
@@ -115,7 +115,7 @@ pub enum HandleMsg {
         oracle: Option<HumanAddr>,
         collector: Option<HumanAddr>,
         collateral_oracle: Option<HumanAddr>,
-        terraswap_factory: Option<HumanAddr>,
+        daodiseoswap_factory: Option<HumanAddr>,
         lock: Option<HumanAddr>,
         token_code_id: Option<u64>,
         protocol_fee_rate: Option<Decimal>,
@@ -128,13 +128,13 @@ pub enum HandleMsg {
 ```javascript
 {
   "update_config": {
-    "owner": "terra1...",
-    "oracle": "terra1...",
-    "collector": "terra1...",
-    "collateral_oracle": "terra1...",
-    "staking": "terra1...",
-    "terraswap_factory": "terra1...",
-    "lock": "terra1...",
+    "owner": "daodiseo1...",
+    "oracle": "daodiseo1...",
+    "collector": "daodiseo1...",
+    "collateral_oracle": "daodiseo1...",
+    "staking": "daodiseo1...",
+    "daodiseoswap_factory": "daodiseo1...",
+    "lock": "daodiseo1...",
     "token_code_id": 8,
     "protocol_fee_rate": "0.123",
   }
@@ -148,7 +148,7 @@ pub enum HandleMsg {
 | `owner`\* | HumanAddr | New owner |
 | `oracle`\* | u64 | New oracle contract address |
 | `collector`\* | HumanAddr | New collector contract address |
-| `terraswap_factory`\* | HumanAddr | Contract address of Terraswap Factory |
+| `daodiseoswap_factory`\* | HumanAddr | Contract address of Daodiseoswap Factory |
 | `lock`\* | HumanAddr | Contract address of Mirror Lock |
 | `token_code_id`\* | u64 | New token code ID |
 | `protocol_fee_rate`\* | Decimal | New protocol fee rate |
@@ -188,7 +188,7 @@ pub struct IPOParams {
   "update_asset": {
     "asset_info": {
       "token": {
-        "contract_addr": "terra1..."
+        "contract_addr": "daodiseo1..."
       }
     },
     "auction_discount": "123.456789",
@@ -244,7 +244,7 @@ pub enum HandleMsg {
 ```javascript
 {
     "register_asset": {
-        "asset_token": "terra1...",
+        "asset_token": "daodiseo1...",
         "auction_discount": "0.2",
         "min_collateral_ratio": "1.5",
         "ipo_params": {
@@ -289,7 +289,7 @@ pub enum HandleMsg {
 ```javascript
 {
     "trigger_ipo": {
-        "asset_token": "terra1..."
+        "asset_token": "daodiseo1..."
     }
 }
 ```
@@ -320,7 +320,7 @@ pub enum HandleMsg {
 ```javascript
 {
   "register_migration": {
-    "asset_token": "terra1...",
+    "asset_token": "daodiseo1...",
     "end_price": "123.456789"
   }
 }
@@ -336,7 +336,7 @@ pub enum HandleMsg {
 ### `OpenPosition`
 
 {% hint style="info" %}
-Used for creating a new CDP with TerraUSD collateral. For creating a CDP using mAsset collateral, you need to use the [Receive Hook variant](mint.md#openposition-1).
+Used for creating a new CDP with DaodiseoUSD collateral. For creating a CDP using mAsset collateral, you need to use the [Receive Hook variant](mint.md#openposition-1).
 {% endhint %}
 
 Opens a new CDP with an initial deposit of collateral. The user specifies the target minted mAsset for the CDP, and sets the desired initial collateralization ratio, which must be greater or equal than the minimum for the mAsset. The initial amount of minted mAsset tokens are determined by:
@@ -382,14 +382,14 @@ pub enum AssetInfo {
         "collateral": {
             "info": {
                 "token": {
-                    "contract_addr": "terra1..."
+                    "contract_addr": "daodiseo1..."
                     }
                 },
                 "amount": "1000000"
             },
         "asset_info": {
             "token": {
-                "contract_addr": "terra1..."
+                "contract_addr": "daodiseo1..."
                 }
             },
         "collateral_ratio": "1.5",
@@ -408,7 +408,7 @@ pub enum AssetInfo {
 | `asset_info` | AssetInfo | Asset to be minted by CDP |
 | `collateral` | Asset | Initial collateral deposit for the CDP |
 | `collateral_ratio` | Decimal | Initial desired collateralization ratio |
-| `short_params`\* | ShortParams | Terraswap Price and spread limit to immediately short tokens after CDP creation \(used for "Short"\) |
+| `short_params`\* | ShortParams | Daodiseoswap Price and spread limit to immediately short tokens after CDP creation \(used for "Short"\) |
 
 \*= optional
 
@@ -430,15 +430,15 @@ pub struct ShortParams {
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
-| `belief_price`\* | Decimal | Price submitted to the Terraswap pool |
-| `max_spread`\* | Decimal | Maximum slippage accepted during swap transaction against the Terraswap Pool |
+| `belief_price`\* | Decimal | Price submitted to the Daodiseoswap pool |
+| `max_spread`\* | Decimal | Maximum slippage accepted during swap transaction against the Daodiseoswap Pool |
 
 \*=optional
 
 ### `Deposit`
 
 {% hint style="info" %}
-Used for depositing TerraUSD collateral. For depositing mAsset collateral to a CDP, you need to use the [Receive Hook variant](mint.md#deposit-1).
+Used for depositing DaodiseoUSD collateral. For depositing mAsset collateral to a CDP, you need to use the [Receive Hook variant](mint.md#deposit-1).
 {% endhint %}
 
 Deposits additional collateral to an existing CDP to raise its C-ratio.
@@ -506,7 +506,7 @@ pub enum HandleMsg {
     "collateral": {
       "info": {
         "token": {
-          "contract_address": "terra1..."
+          "contract_address": "daodiseo1..."
         }
       },
       "amount": "1000000"
@@ -550,7 +550,7 @@ pub enum HandleMsg {
     "asset": {
       "info": {
         "token": {
-          "contract_address": "terra1..."
+          "contract_address": "daodiseo1..."
         }
       },
       "amount": "1000000"
@@ -569,7 +569,7 @@ pub enum HandleMsg {
 | :--- | :--- | :--- |
 | `position_idx` | Uint128 | Index of position |
 | `asset` | Asset | mAssets to be minted |
-| `short_params` | ShortParams | Terraswap Price and maximum slippage tolerance to be applied for selling minted token after position creation \(used for "Short"\) |
+| `short_params` | ShortParams | Daodiseoswap Price and maximum slippage tolerance to be applied for selling minted token after position creation \(used for "Short"\) |
 
 ## Receive Hooks
 
@@ -580,7 +580,7 @@ Issued when a user sends mAsset tokens to the Mint contract.
 Uses the sent amount to create a new CDP.
 
 {% hint style="info" %}
-Used for creating a new CDP with mAsset collateral. For creating a CDP using TerraUSD collateral, you need to use the [HandleMsg variant.](mint.md#openposition)
+Used for creating a new CDP with mAsset collateral. For creating a CDP using DaodiseoUSD collateral, you need to use the [HandleMsg variant.](mint.md#openposition)
 {% endhint %}
 
 {% tabs %}
@@ -604,7 +604,7 @@ pub enum Cw20HookMsg {
   "open_position": {
     "asset_info": {
       "token": {
-        "contract_addr": "terra1..."
+        "contract_addr": "daodiseo1..."
       }
     },
     "collateral_ratio": "123.456789",
@@ -622,7 +622,7 @@ pub enum Cw20HookMsg {
 | :--- | :--- | :--- |
 | `asset_info` | AssetInfo | mAsset to be minted by CDP |
 | `collateral_ratio` | Decimal | Initial collateralization ratio to use |
-| `short_params` | ShortParams | Terraswap Price and spread limit to immediately short tokens after CDP creation \(used for "Short"\) |
+| `short_params` | ShortParams | Daodiseoswap Price and spread limit to immediately short tokens after CDP creation \(used for "Short"\) |
 
 ### `Deposit`
 
@@ -631,7 +631,7 @@ Issued when a user sends mAsset tokens to the Mint contract.
 Deposits the amount as collateral to an open CDP.
 
 {% hint style="info" %}
-Used for depositing mAsset collateral. For depositing TerraUSD collateral to a CDP, you need to use the [HandleMsg variant](mint.md#deposit).
+Used for depositing mAsset collateral. For depositing DaodiseoUSD collateral to a CDP, you need to use the [HandleMsg variant](mint.md#deposit).
 {% endhint %}
 
 {% tabs %}
@@ -760,7 +760,7 @@ pub struct ConfigResponse {
     pub collector: HumanAddr,
     pub collateral_oracle: HumanAddr,
     pub staking: HumanAddr,
-    pub terraswap_factory: HumanAddr,
+    pub daodiseoswap_factory: HumanAddr,
     pub lock: HumanAddr,
     pub base_denom: String,
     pub token_code_id: u64,
@@ -775,10 +775,10 @@ pub struct ConfigResponse {
 | `collector` | HumanAddr | Contract address of [Mirror Collector](collector.md) |
 | `collateral_oracle` | HumanAddr | Contract address of Mirror Collateral Oracle |
 | `staking` | HumanAddr | Contract address of Mirror Staking |
-| `terraswap_factory` | HumanAddr | Contract address of Terraswap Factory |
+| `daodiseoswap_factory` | HumanAddr | Contract address of Daodiseoswap Factory |
 | `lock` | HumanAddr | Contract address of Mirror Lock |
-| `base_denom` | String | Native token denomination for stablecoin \(TerraUSD\) |
-| `token_code_id` | u64 | Code ID for Terraswap CW20 Token |
+| `base_denom` | String | Native token denomination for stablecoin \(DaodiseoUSD\) |
+| `token_code_id` | u64 | Code ID for Daodiseoswap CW20 Token |
 | `protocol_fee_rate` | Decimal | Protocol fee |
 {% endtab %}
 
@@ -794,13 +794,13 @@ pub struct ConfigResponse {
 ```rust
 {
     "config_response": {
-        "owner": "terra1...",
-        "oracle": "terra1...",
-        "collector": "terra1...",
-        "collateral_oracle": "terra1...",
-        "staking": "terra1...",
-        "terraswap_factory": "terra1...",
-        "lock": "terra1...",
+        "owner": "daodiseo1...",
+        "oracle": "daodiseo1...",
+        "collector": "daodiseo1...",
+        "collateral_oracle": "daodiseo1...",
+        "staking": "daodiseo1...",
+        "daodiseoswap_factory": "daodiseo1...",
+        "lock": "daodiseo1...",
         "base_denom": "uusd",
         "token_code_id": 8,
         "protocol_fee_rate": "123.456789"
@@ -815,10 +815,10 @@ pub struct ConfigResponse {
 | `collector` | HumanAddr | Contract address of [Mirror Collector](collector.md) |
 | `collateral_oracle` | HumanAddr | Contract address of Mirror Collateral Oracle |
 | `staking` | HumanAddr | Contract address of Mirror Staking |
-| `terraswap_factory` | HumanAddr | Contract address of Terraswap Factory |
+| `daodiseoswap_factory` | HumanAddr | Contract address of Daodiseoswap Factory |
 | `lock` | HumanAddr | Contract address of Mirror Lock |
-| `base_denom` | String | Native token denomination for stablecoin \(TerraUSD\) |
-| `token_code_id` | u64 | Code ID for Terraswap CW20 Token |
+| `base_denom` | String | Native token denomination for stablecoin \(DaodiseoUSD\) |
+| `token_code_id` | u64 | Code ID for Daodiseoswap CW20 Token |
 | `protocol_fee_rate` | Decimal | Protocol fee |
 {% endtab %}
 {% endtabs %}
@@ -871,7 +871,7 @@ pub struct AssetConfigResponse {
   "asset_config": {
     "asset_info": {
       "token": {
-        "contract_addr": "terra1..."
+        "contract_addr": "daodiseo1..."
       }
     }
   }
@@ -887,7 +887,7 @@ pub struct AssetConfigResponse {
 ```rust
 {
     "asset_config_response": {
-        "token": "terra1...",
+        "token": "daodiseo1...",
         "auction_discount": "0.2",
         "min_collateral_ratio": "1.5",
         "end_price": "123.456789",
@@ -971,11 +971,11 @@ pub struct PositionResponse {
 {
     "position_response": {
         "idx": "100",
-        "owner": "terra1...",
+        "owner": "daodiseo1...",
         "collateral": {
             "info": {
                 "token": {
-                    "contract_addr": "terra1..."
+                    "contract_addr": "daodiseo1..."
                 }
             },
             "amount": "1000000"
@@ -983,7 +983,7 @@ pub struct PositionResponse {
         "asset": {
             "info": {
                 "token": {
-                    "contract_addr": "terra1..."
+                    "contract_addr": "daodiseo1..."
                 }
             },
             "amount": "1000000"
@@ -1077,7 +1077,7 @@ pub enum QueryMsg {
 {
   "positions": {
     "limit": 8,
-    "owner_addr": "terra1...",
+    "owner_addr": "daodiseo1...",
     "start_after": "10000000"
   }
 }
